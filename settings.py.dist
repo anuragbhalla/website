@@ -4,4 +4,5 @@ twitter = dict(
     consumer_secret="",
     access_token="",
     access_token_secret="",
+    screen_name="jspyconf",
 )
