@@ -1,9 +1,18 @@
+# coding: utf-8
+
 import requests
 
 from requests_oauthlib import OAuth1
 from werkzeug.contrib.cache import SimpleCache
 
-from settings import twitter
+try:
+    from settings import twitter
+except ImportError:
+    class ImproperlyConfigured(Exception):
+        """Application is somehow improperly configured."""
+
+    msg = "Kurulum için lütfen README.md belgesini okuyun."
+    raise ImproperlyConfigured(msg)
 
 cache = SimpleCache()
 
