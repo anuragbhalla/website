@@ -1313,6 +1313,16 @@ footer .unicrow:hover {
   -moz-opacity: 1;
   filter: alpha(opacity=0);
 }
+.speaker-list .default-picture {
+  width: 220px;
+  height: 220px;
+  background: #f9f9f9 url(../img/bg/default-picture.png) no-repeat center center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  text-indent: -9999px;
+}
+
 .speaker-list .last {
   margin-right: 0;
 }
