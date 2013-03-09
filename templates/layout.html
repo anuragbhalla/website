@@ -2,51 +2,29 @@
 <html lang="tr">
 <head>
     <meta charset="utf-8">
-    <title>JsPy Modern Web Konferansı 2013</title>
-    <meta name="description" content=""><!-- @TODO: Add a description here -->
+    <title>{{ _("JsPy Modern Web Konferansı 2013") }}</title>
+    <meta name="description" content="{{ _("Modern web teknolojileri hakkında
+                                            Türkçe ve İngilizce sunumlar içeren bir konferans.") }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='img/icon/favicon.png') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.fancybox.css') }}">
     <script src="{{ url_for('static', filename='js/modernizr.custom.15106.js') }}"></script>
 </head>
-
 <body>
-
-    <div class="countdown-timer">
-
-        <!-- <img class="countdown-logo" src="img/logo/jspy2013.png" height="100" width="87" alt="JSPY Konferansı 2013"> -->
-
-        <div class="inner">
-            <div class="days timer-col">
-                <span class="number">12</span>
-                <span class="type">Gün</span>
-            </div>
-
-            <div class="hours timer-col">
-                <span class="number">30</span>
-                <span class="type">Saat</span>
-            </div>
-
-            <div class="mins timer-col">
-                <span class="number">40</span>
-                <span class="type">Dakika</span>
-            </div>
-        </div>
-    </div><!-- end countdown-timer -->
 
     <header id="header">
         <div class="container">
-            <a href="#" class="logo"><img src="/static/img/logo/jspy2013.png" height="100" width="87" alt="JSPY Konferansı 2013"></a>
+            <a href="#" class="logo"><img src="/static/img/logo/jspy2013.png" height="100" width="87" alt=""></a>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#" class="active">Ana Sayfa</a></li>
-                    <li><a href="#sponsors">Sponsorlar</a></li>
-                    <li><a href="#schedule">Program</a></li>
-                    <li class="gap"><a href="#speakers">Konuşmacılar</a></li>
-                    <li><a href="#faq">SSS</a></li>
-                    <li><a href="#venue">Ulaşım</a></li>
-                    <li><a class="nav-github" href="http://twitter.com/jspyconf">Twitter</a></li>
-                    <li class="last"><a class="nav-twitter" href="http://github.com/jspyconf">Github</a></li>
+                    <li><a href="#" class="active">{{ _("Ana Sayfa") }}</a></li>
+                    <li><a href="#sponsors">{{ _("Sponsorlar") }}</a></li>
+                    <li><a href="#schedule">{{ _("Program") }}</a></li>
+                    <li class="gap"><a href="#speakers">{{ _("Konuşmacılar") }}</a></li>
+                    <li><a href="#faq">{{ _("SSS") }}</a></li>
+                    <li><a href="#venue">{{ _("Ulaşım") }}</a></li>
+                    <li><a class="nav-github" href="https://github.com/jspyconf">Github</a></li>
+                    <li class="last"><a class="nav-twitter" href="https://twitter.com/jspyconf">Twitter</a></li>
                 </ul>
             </nav><!-- end main-nav -->
         </div><!-- end container -->
@@ -54,34 +32,34 @@
 
     <div id="intro">
         <div class="container">
-            <span class="city">Istanbul</span>
-            <h1>JsPy Konferansı</h1>
-            <h2>30-31 Mart 2013 — Özyeğin Üniversitesi</h2>
-            <p>Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula
+            <span class="city">{{ _("Istanbul") }}</span>
+            <h1>{{ _("JsPy Konferansı") }}</h1>
+            <h2>{{ _("30-31 Mart 2013 — Özyeğin Üniversitesi") }}</h2>
+            <p>{{ _("Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula
                lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna
-               sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra</p>
-            <a href="" class="button">Hemen Kaydol</a>
+               sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra") }}</p>
+            <a href="" class="button">{{ _("Hemen Kaydol") }}</a>
         </div><!-- end container -->
     </div><!-- end intro -->
 
     <div id="attend-benefits">
         <div class="container">
-            <h1><span>Neden Katılmalıyım</span></h1>
+            <h1><span>{{ _("Neden Katılmalıyım") }}</span></h1>
             <ul>
                 <li class="speakers">
-                    <span class="text">Favori Konuşmacıları Dinleme İmkanı</span>
+                    <span class="text">{{ _("Favori Konuşmacıları Dinleme İmkanı") }}</span>
                     <span class="icon"></span>
                 </li>
                 <li class="tech">
-                    <span class="text">Modern Teknolojiler Hakkında Sunumlar</span>
+                    <span class="text">{{ _("Modern Teknolojiler Hakkında Sunumlar") }}</span>
                     <span class="icon"></span>
                 </li>
                 <li class="knowledge">
-                    <span class="text">Yeni Bilgiler Öğrenme İmkanı</span>
+                    <span class="text">{{ _("Yeni Bilgiler Öğrenme İmkanı") }}</span>
                     <span class="icon"></span>
                 </li>
                 <li class="network">
-                    <span class="text">Bağlantılarınız Genişletme İmkanı</span>
+                    <span class="text">{{ _("Bağlantılarınız Genişletme İmkanı") }}</span>
                     <span class="icon"></span>
                 </li>
             </ul>
@@ -97,22 +75,22 @@
 
     <div id="sponsors">
         <div class="container">
-            <h1><span>Sponsorlar</span></h1>
+            <h1><span>{{ _("Sponsorlar") }}</span></h1>
 
             <div id="golden" class="sponsor-logos">
-                <h2>Altın</h2>
+                <h2>{{ _("Altın") }}</h2>
                 <img src="img/temp/sponsors/golden.jpg" height="59" width="376" alt="">
             </div><!-- end golden -->
 
             <div id="silver" class="sponsor-logos">
-                <h2>Gümüş</h2>
+                <h2>{{ _("Gümüş") }}</h2>
                 <img src="img/temp/sponsors/silver1.jpg" height="39" width="266" alt="">
                 <img class="gap" src="img/temp/sponsors/silver2.jpg" height="75" width="265" alt="">
                 <img src="img/temp/sponsors/silver3.jpg" height="56" width="280" alt="">
             </div><!-- end silver -->
 
             <div id="bronze" class="sponsor-logos">
-                <h2>Bronz</h2>
+                <h2>{{ _("Bronz") }}</h2>
                 <img src="img/temp/sponsors/bronze1.jpg" height="21" width="168" alt="">
                 <img class="gap" src="img/temp/sponsors/bronze2.jpg" height="36" width="141" alt="">
                 <img class="gap" src="img/temp/sponsors/bronze3.jpg" height="83" width="83" alt="">
@@ -120,7 +98,7 @@
             </div><!-- end bronze -->
 
             <div class="other sponsor-logos">
-                <h2>Diğer</h2>
+                <h2>{{ _("Diğer") }}</h2>
                 <img src="img/temp/sponsors/bronze1.jpg" height="21" width="168" alt="">
                 <img class="gap" src="img/temp/sponsors/bronze2.jpg" height="36" width="141" alt="">
                 <img class="gap" src="img/temp/sponsors/bronze3.jpg" height="83" width="83" alt="">
@@ -128,8 +106,8 @@
             </div><!-- end other -->
 
             <div class="call-to-action">
-                <p>Etkinlik sponsorluğu ile mi ilgileniyorsunuz?</p>
-                <a href="mailto:sponsorship@jspyconf.org" class="button">Sponsorluk İsteği Gönder</a>
+                <p>{{ _("Etkinlik sponsorluğu ile mi ilgileniyorsunuz?") }}</p>
+                <a href="mailto:sponsorship@jspyconf.org" class="button">{{ _("Sponsorluk İsteği Gönder") }}</a>
             </div><!-- end call-to-action -->
 
         </div><!-- end container -->
@@ -137,16 +115,16 @@
 
     <div id="schedule">
         <div class="container">
-            <h1><span>Konuşma Programı</span></h1>
+            <h1><span>{{ _("Konuşma Programı") }}</span></h1>
 
             <ul class="schedule-tab">
-                <li><a href="#first-day" class="first">30 Mart</a></li>
-                <li><a href="#second-day" class="second">31 Mart</a></li>
+                <li><a href="#first-day" class="first">{{ _("30 Mart") }}</a></li>
+                <li><a href="#second-day" class="second">{{ _("31 Mart") }}</a></li>
                 <li class="subscribe">
-                    <a href="#" class="third">Abone Ol</a>
+                    <a href="#" class="third">{{ _("Abone Ol") }}</a>
                     <ul>
-                        <li><a href="#">Google Takvim ile Abone Ol</a></li>
-                        <li><a href="#">iCal ile Abone Ol</a></li>
+                        <li><a href="#">{{ _("Google Takvim ile Abone Ol") }}</a></li>
+                        <li><a href="#">{{ _("iCal ile Abone Ol") }}</a></li>
                     </ul>
                 </li>
             </ul>
@@ -186,7 +164,7 @@
                             <h2>Salon: Foo</h2>
                             <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec 	sagittis sem nibh id elit. Duis sed odio sit amet</p>
                         </div>
-                        <span class="live">Canlı</span>
+                        <span class="live">{{ _("Canlı") }}</span>
                     </li>
                     <li class="last">
                         <div class="basic-info">
@@ -195,50 +173,6 @@
                             <h3>James Burke</h3>
                         </div>
                         <span class="sponsor-badge active"><span>Sponsor</span></span>
-                        <div class="detail">
-                            <h2>Salon: Foo</h2>
-                            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec 	sagittis sem nibh id elit. Duis sed odio sit amet</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="basic-info">
-                            <span class="time">08:30</span>
-                            <h2>Açılış Konuşması</h2>
-                            <h3>Berker Peksağ</h3>
-                        </div>
-                        <div class="detail">
-                            <h2>Salon: Foo</h2>
-                            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec 	sagittis sem nibh id elit. Duis sed odio sit amet</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="basic-info">
-                            <span class="time">09:00</span>
-                            <h2>The Flower, the Field, and the Stack</h2>
-                            <h3>Ben Hammersley</h3>
-                        </div>
-                        <div class="detail">
-                            <h2>Salon: Foo</h2>
-                            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec 	sagittis sem nibh id elit. Duis sed odio sit amet</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="basic-info">
-                            <span class="time">09:45</span>
-                            <h2>Pixels, Play and People</h2>
-                            <h3>Seb Lee-Delisle</h3>
-                        </div>
-                        <div class="detail">
-                            <h2>Salon: Foo</h2>
-                            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec 	sagittis sem nibh id elit. Duis sed odio sit amet</p>
-                        </div>
-                    </li>
-                    <li class="last">
-                        <div class="basic-info">
-                            <span class="time">10:30</span>
-                            <h2>Admiral Shovel and the Toilet Roll</h2>
-                            <h3>James Burke</h3>
-                        </div>
                         <div class="detail">
                             <h2>Salon: Foo</h2>
                             <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec 	sagittis sem nibh id elit. Duis sed odio sit amet</p>
@@ -294,50 +228,6 @@
                             <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec 	sagittis sem nibh id elit. Duis sed odio sit amet</p>
                         </div>
                     </li>
-                    <li>
-                        <div class="basic-info">
-                            <span class="time">08:30</span>
-                            <h2>Açılış Konuşması2</h2>
-                            <h3>Berker Peksağ</h3>
-                        </div>
-                        <div class="detail">
-                            <h2>Salon: Foo</h2>
-                            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec 	sagittis sem nibh id elit. Duis sed odio sit amet</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="basic-info">
-                            <span class="time">09:00</span>
-                            <h2>The Flower, the Field, and the Stack2</h2>
-                            <h3>Ben Hammersley</h3>
-                        </div>
-                        <div class="detail">
-                            <h2>Salon: Foo</h2>
-                            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec 	sagittis sem nibh id elit. Duis sed odio sit amet</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="basic-info">
-                            <span class="time">09:45</span>
-                            <h2>Pixels, Play and People2</h2>
-                            <h3>Seb Lee-Delisle</h3>
-                        </div>
-                        <div class="detail">
-                            <h2>Salon: Foo</h2>
-                            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec 	sagittis sem nibh id elit. Duis sed odio sit amet</p>
-                        </div>
-                    </li>
-                    <li class="last">
-                        <div class="basic-info">
-                            <span class="time">10:30</span>
-                            <h2>Admiral Shovel and the Toilet Roll2</h2>
-                            <h3>James Burke</h3>
-                        </div>
-                        <div class="detail">
-                            <h2>Salon: Foo</h2>
-                            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec 	sagittis sem nibh id elit. Duis sed odio sit amet</p>
-                        </div>
-                    </li>
                 </ul>
             </div>
 
@@ -346,11 +236,12 @@
 
     <div id="speakers">
         <div class="container">
-            <h1><span>Konuşmacılar</span></h1>
+            <h1><span>{{ _("Konuşmacılar") }}</span></h1>
 
             <ul class="speaker-list">
                 <li>
-                    <img src="img/temp/speakers/speaker1.jpg" height="220" width="220" alt="">
+                    <!--<img src="img/temp/speakers/speaker1.jpg" height="220" width="220" alt="">-->
+                    <div class="default-picture">Fotoğraf Yok</div>
                     <h2>Berker Peksağ</h2>
                     <h3>Mozilla</h3>
                     <span class="sponsor-badge active"><span>Sponsor</span></span>
@@ -361,7 +252,7 @@
                     </ul>
                 </li>
                 <li>
-                    <img src="img/temp/speakers/speaker2.jpg" height="220" width="220" alt="">
+                    <div class="default-picture">Fotoğraf Yok</div>
                     <h2>Sergey Brin</h2>
                     <h3>Google</h3>
                     <ul class="links">
@@ -371,7 +262,7 @@
                     </ul>
                 </li>
                 <li>
-                    <img src="img/temp/speakers/speaker3.jpg" height="220" width="220" alt="">
+                    <div class="default-picture">Fotoğraf Yok</div>
                     <h2>Kenneth Reitz</h2>
                     <h3>Heroku</h3>
                     <ul class="links">
@@ -381,7 +272,7 @@
                     </ul>
                 </li>
                 <li class="last">
-                    <img src="img/temp/speakers/speaker4.jpg" height="220" width="220" alt="">
+                    <div class="default-picture">Fotoğraf Yok</div>
                     <h2>Tim Cook</h2>
                     <h3>Apple</h3>
                     <span class="sponsor-badge active"><span>Sponsor</span></span>
@@ -392,7 +283,7 @@
                     </ul>
                 </li>
                 <li>
-                    <img src="img/temp/speakers/speaker1.jpg" height="220" width="220" alt="">
+                    <div class="default-picture">Fotoğraf Yok</div>
                     <h2>Berker Peksağ</h2>
                     <h3>Mozilla</h3>
                     <ul class="links">
@@ -402,7 +293,7 @@
                     </ul>
                 </li>
                 <li>
-                    <img src="img/temp/speakers/speaker2.jpg" height="220" width="220" alt="">
+                    <div class="default-picture">Fotoğraf Yok</div>
                     <h2>Sergey Brin</h2>
                     <h3>Google</h3>
                     <ul class="links">
@@ -412,7 +303,7 @@
                     </ul>
                 </li>
                 <li>
-                    <img src="img/temp/speakers/speaker3.jpg" height="220" width="220" alt="">
+                    <div class="default-picture">Fotoğraf Yok</div>
                     <h2>Kenneth Reitz</h2>
                     <h3>Heroku</h3>
                     <ul class="links">
@@ -422,7 +313,7 @@
                     </ul>
                 </li>
                 <li class="last">
-                    <img src="img/temp/speakers/speaker4.jpg" height="220" width="220" alt="">
+                    <div class="default-picture">Fotoğraf Yok</div>
                     <h2>Tim Cook</h2>
                     <h3>Apple</h3>
                     <ul class="links">
@@ -438,30 +329,30 @@
 
     <div id="faq">
         <div class="container">
-            <h1><span>Sıkça Sorulan Sorular</span></h1>
+            <h1><span>{{ _("Sıkça Sorulan Sorular") }}</span></h1>
             <ol>
                 <li>
-                    <h2><a href="#">İsteyen herkes konferansa katılabilir mi?</a></h2>
-                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis</p>
+                    <h2><a href="#">{{ _("İsteyen herkes konferansa katılabilir mi?") }}</a></h2>
+                    <p>{{ _("This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis") }}</p>
                 </li>
             </ol>
 
             <div class="call-to-action">
-                <p>Aklınıza takılan başka bir sorunuz mu var?</p>
-                <a href="mailto:contact@jspyconf.org" class="button">Bize Ulaşın</a>
+                <p>{{ _("Aklınıza takılan başka bir sorunuz mu var?") }}</p>
+                <a href="mailto:contact@jspyconf.org" class="button">{{ _("Bize Ulaşın") }}</a>
             </div><!-- end call-to-action -->
         </div><!-- end container -->
     </div><!-- end faq -->
 
     <div id="venue">
         <div class="container">
-            <h1><span>Etkinlik Yeri ve Ulaşım</span></h1>
+            <h1><span>{{ _("Etkinlik Yeri ve Ulaşım") }}</span></h1>
 
             <div class="map">
                 <iframe width="940" height="550" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Ozyegin+Universitesi,+Istanbul,+Turkey&amp;aq=3&amp;oq=%C3%B6zye%C4%9Fin&amp;sll=39.08719,35.177914&amp;sspn=19.766223,17.907715&amp;t=m&amp;ie=UTF8&amp;hq=Ozyegin+Universitesi,+Istanbul,+Turkey&amp;ll=41.027701,29.047766&amp;spn=0.035613,0.080595&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
 
                 <div class="vcard">
-                    <p class="org">Özyeğin Üniversitesi</p>
+                    <p class="org">{{ _("Özyeğin Üniversitesi") }}</p>
                     <p class="adr">
                         <span class="street-address">Altunizade Mh. Kuşbakışı Caddesi No: 2, 34662 İstanbul</span>
                     </p>
@@ -469,9 +360,9 @@
             </div><!-- end map -->
 
             <div class="transportation">
-                <img src="img/content/ozyegin-university.jpg" height="140" width="140" alt="Özyeğin Üniversitesi">
-                <h2>Etkinlik Yerine Ulaşım ve Diğer Bilgiler</h2>
-                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a </p>
+                <img src="/static/img/content/ozyegin-university.jpg" height="140" width="140" alt="Özyeğin Üniversitesi">
+                <h2>{{ _("Etkinlik Yerine Ulaşım ve Diğer Bilgiler") }}</h2>
+                <p>{{ _("This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.") }}</p>
             </div><!-- end transportation -->
 
         </div><!-- end container -->
@@ -479,15 +370,13 @@
 
     <div id="organization">
         <div class="container">
-            <h1><span>Organizasyon</span></h1>
-            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan</p>
+            <h1><span>{{ _("Organizasyon") }}</span></h1>
 
             <div class="organizators">
                 {% block organizators %}{% endblock %}
             </div><!-- end organizators -->
 
             <div class="other-supporters">
-                <p>Desteklerinden dolayı teşekkürler.</p>
                 <a href="http://jstanbul.org/"><img src="/static/img/logo/jstanbul.jpg" height="47" width="136" alt=""></a>
                 <a href="http://pyistanbul.org/"><img src="/static/img/logo/pyistanbul.jpg" height="59" width="58" alt=""></a>
             </div>
@@ -497,8 +386,8 @@
 
     <footer>
         <div class="container">
-            <p>JsPy Modern Web Teknolojileri Konferansı 2013</p>
-            <a href="mailto:bilgi@jspyconf.org" class="footer-email">E-Posta Gönder</a>
+            <p>{{ _("JsPy Modern Web Teknolojileri Konferansı 2013") }}</p>
+            <a href="mailto:info@jstanbul.org" class="footer-email">E-Posta Gönder</a>
             <a href="http://twitter.com/jspyconf" class="footer-twitter">Twitter</a>
 
             <a href="http://www.unicrow.com" class="unicrow"><img src="/static/img/logo/unicrow.png" height="36" width="70" alt="Designed by Unicrow"></a>

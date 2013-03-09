@@ -1,0 +1,80 @@
+# English translations for PROJECT.
+# Copyright (C) 2013 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2013-03-09 12:02+0200\n"
+"PO-Revision-Date: 2013-03-09 11:46+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: templates/layout.html:5
+msgid "JsPy Modern Web Konferansı 2013"
+msgstr ""
+
+#: templates/layout.html:6
+msgid ""
+"Modern web teknolojileri hakkında\n"
+"                                            Türkçe ve İngilizce sunumlar "
+"içeren bir konferans."
+msgstr "bbbbbbbbbbbbbbbbbbbbb"
+
+#: templates/layout.html:20
+msgid "Ana Sayfa"
+msgstr ""
+
+#: templates/layout.html:21
+msgid "Sponsorlar"
+msgstr ""
+
+#: templates/layout.html:22
+msgid "Program"
+msgstr ""
+
+#: templates/layout.html:23
+msgid "Konuşmacılar"
+msgstr ""
+
+#: templates/layout.html:24
+msgid "SSS"
+msgstr ""
+
+#: templates/layout.html:25
+msgid "Ulaşım"
+msgstr ""
+
+#: templates/layout.html:35
+msgid "Istanbul"
+msgstr ""
+
+#: templates/layout.html:36
+msgid "JsPy Konferansı"
+msgstr ""
+
+#: templates/layout.html:37
+msgid "30-31 Mart 2013 — Özyeğin Üniversitesi"
+msgstr ""
+
+#: templates/layout.html:38
+msgid ""
+"Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula\n"
+"               lacinia scelerisque tempor, lacus lacus ornare ante, ac "
+"egestas est urna\n"
+"               sit amet arcu. Class aptent taciti sociosqu ad litora "
+"torquent per conubia nostra"
+msgstr ""
+
+#: templates/layout.html:41
+msgid "Hemen Kaydol"
+msgstr ""
+
