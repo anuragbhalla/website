@@ -31,11 +31,13 @@ def get_statuses():
         params=params.format(screen_name=twitter.get("screen_name"))
     )
 
-    auth = OAuth1(twitter.get("consumer_key"),
-                  twitter.get("consumer_secret"),
-                  twitter.get("access_token"),
-                  twitter.get("access_token_secret"),
-                  signature_type="auth_header")
+    auth = OAuth1(
+        twitter.get("consumer_key"),
+        twitter.get("consumer_secret"),
+        twitter.get("access_token"),
+        twitter.get("access_token_secret"),
+        signature_type="auth_header",
+    )
     response = requests.get(url, auth=auth)
     cache.set("statuses", response.json(), timeout=60 * 60)
     return response.json()
