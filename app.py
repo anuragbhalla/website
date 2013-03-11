@@ -1,6 +1,7 @@
 from flask import Flask, request, render_template
 from flaskext.babel import Babel
 
+from settings import DEBUG, PORT
 from utils import get_statuses
 
 DEFAULT_LOCALE = "tr"
@@ -23,4 +24,10 @@ def index():
     return render_template("index.html", statuses=get_statuses())
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    import sys
+
+    try:
+        port = int(sys.argv[1])
+    except (IndexError, ValueError):
+        port = PORT
+    app.run(port=port, debug=DEBUG)
