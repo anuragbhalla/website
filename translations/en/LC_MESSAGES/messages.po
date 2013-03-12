@@ -201,7 +201,7 @@ msgstr ""
 
 #: templates/layout.html:613
 msgid "Organizasyon"
-msgstr "Organization"
+msgstr "ORGANIZATION"
 
 #: templates/layout.html:629
 msgid "JsPy Modern Web Teknolojileri Konferansı 2013"
