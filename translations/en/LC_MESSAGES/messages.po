@@ -27,7 +27,7 @@ msgid ""
 "Modern web teknolojileri hakkında\n"
 "                                            Türkçe ve İngilizce sunumlar "
 "içeren bir konferans."
-msgstr "bbbbbbbbbbbbbbbbbbbbb"
+msgstr ""
 
 #: templates/layout.html:31
 msgid "Ana Sayfa"
@@ -206,19 +206,4 @@ msgstr ""
 #: templates/layout.html:629
 msgid "JsPy Modern Web Teknolojileri Konferansı 2013"
 msgstr ""
-
-#~ msgid ""
-#~ "\n"
-#~ "                    Etkinlik günleri boyunca "
-#~ "sabahları Taksim Meydanındaki AKM önünden "
-#~ "servis kaldırılacaktır. Bunun\n"
-#~ "                    yanında Özyeğin Üniversitesinin"
-#~ " saat başı yine aynı yerden kalkan"
-#~ " servislerini 3 TL karşılığında gün\n"
-#~ "                    boyunca kullanabilirsiniz. "
-#~ "Etkinlik sonunda yine Çekmeköy Yerleşkesinden"
-#~ " Taksim meydanına servis\n"
-#~ "                    kaldırılacaktır.\n"
-#~ "                    "
-#~ msgstr ""
 
