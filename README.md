@@ -13,6 +13,15 @@ $ python app.py
 $ firefox http://127.0.0.1:5000/
 ```
 
+## Deployment
+
+Değişiklikleri depoya gönderdikten sonra, Virtualenv içerisindeyken aşağıdaki
+komutu çalıştırmak yeterli.
+
+```
+$ fab deploy
+```
+
 ## Çeviriler
 
 Eğer yeni çeviriler eklendiyse:
