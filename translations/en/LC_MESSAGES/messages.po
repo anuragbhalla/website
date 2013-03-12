@@ -31,7 +31,7 @@ msgstr ""
 
 #: templates/layout.html:31
 msgid "Ana Sayfa"
-msgstr "Main Page"
+msgstr "MAIN PAGE"
 
 #: templates/layout.html:32 templates/layout.html:65 templates/layout.html:74
 msgid "Sponsorlar"
