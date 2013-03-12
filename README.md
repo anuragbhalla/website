@@ -18,7 +18,7 @@ $ firefox http://127.0.0.1:5000/
 Değişiklikleri depoya gönderdikten sonra, Virtualenv içerisindeyken aşağıdaki
 komutu çalıştırmak yeterli.
 
-```
+```sh
 $ fab deploy
 ```
 
