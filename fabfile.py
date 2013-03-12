@@ -2,13 +2,12 @@ from contextlib import contextmanager
 
 from fabric.api import cd, env, get, local, put, run, sudo, prefix
 
-env.hosts = ['berkerpeksag.com']
-env.host = env.hosts[0]
-env.user = 'wakefield'
-env.password = ''
-env.project_name = 'jspyconf'
-env.root = '/home/wakefield/'
-env.activate = 'source venv/bin/activate'
+from errors import ImproperlyConfigured
+try:
+    from fabenv import env
+except ImportError:
+    msg = "Kurulum için lütfen README.md belgesini okuyun."
+    raise ImproperlyConfigured(msg)
 
 
 @contextmanager
