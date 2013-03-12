@@ -51,7 +51,7 @@ msgstr "FAQ"
 
 #: templates/layout.html:36
 msgid "Ulaşım"
-msgstr ""
+msgstr "Venue"
 
 #: templates/layout.html:46
 msgid "Istanbul"
@@ -77,7 +77,7 @@ msgstr ""
 
 #: templates/layout.html:52
 msgid "Hemen Kaydol"
-msgstr ""
+msgstr "Register Now"
 
 #: templates/layout.html:68
 msgid "Altın Sponsorlar"
@@ -89,15 +89,15 @@ msgstr "Media Sponsors"
 
 #: templates/layout.html:92
 msgid "JsPy'a destek olmak mı istiyorsunuz?"
-msgstr ""
+msgstr "Do you want to support JsPy?"
 
 #: templates/layout.html:93
 msgid "Sponsorluk Dosyasını İndirin"
-msgstr ""
+msgstr "Download Sponsorship File"
 
 #: templates/layout.html:101
 msgid "Konuşma Programı"
-msgstr ""
+msgstr "Schedule"
 
 #: templates/layout.html:104
 msgid "30 Mart"
@@ -113,11 +113,11 @@ msgstr "Subscribe"
 
 #: templates/layout.html:109
 msgid "Google Takvim ile Abone Ol"
-msgstr ""
+msgstr "Subscribe via Google Calendar"
 
 #: templates/layout.html:546
 msgid "Etkinlik Yeri ve Ulaşım"
-msgstr ""
+msgstr "Venue &amp; Location"
 
 #: templates/layout.html:552
 msgid "Özyeğin Üniversitesi"
@@ -193,11 +193,11 @@ msgstr ""
 
 #: templates/layout.html:605
 msgid "Aklınıza takılan bir sorunuz mu var?"
-msgstr ""
+msgstr "Have something to ask?"
 
 #: templates/layout.html:606
 msgid "Bize Ulaşın"
-msgstr ""
+msgstr "Contact Us"
 
 #: templates/layout.html:613
 msgid "Organizasyon"
