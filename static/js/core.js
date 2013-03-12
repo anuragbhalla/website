@@ -22,7 +22,7 @@ $(document).ready(function() {
         }
     });
 
-    // Check Page onScrollg
+    // Check Page onScroll
     var scrollItems = $('.main-nav li a').map(function()
     {
         if ($(this).attr("href")[0] == '#')
