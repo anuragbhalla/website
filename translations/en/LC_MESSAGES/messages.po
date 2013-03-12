@@ -20,7 +20,7 @@ msgstr ""
 
 #: templates/layout.html:5
 msgid "JsPy Modern Web Konferansı 2013"
-msgstr ""
+msgstr "JsPyConf 2013"
 
 #: templates/layout.html:6
 msgid ""
@@ -31,23 +31,23 @@ msgstr ""
 
 #: templates/layout.html:31
 msgid "Ana Sayfa"
-msgstr ""
+msgstr "Main Page"
 
 #: templates/layout.html:32 templates/layout.html:65 templates/layout.html:74
 msgid "Sponsorlar"
-msgstr ""
+msgstr "Sponsors"
 
 #: templates/layout.html:33
 msgid "Program"
-msgstr ""
+msgstr "Schedule"
 
 #: templates/layout.html:34 templates/layout.html:353
 msgid "Konuşmacılar"
-msgstr ""
+msgstr "Speakers"
 
 #: templates/layout.html:35
 msgid "SSS"
-msgstr ""
+msgstr "FAQ"
 
 #: templates/layout.html:36
 msgid "Ulaşım"
@@ -59,11 +59,11 @@ msgstr ""
 
 #: templates/layout.html:47
 msgid "JsPy Konferansı"
-msgstr ""
+msgstr "JsPyConf"
 
 #: templates/layout.html:48
 msgid "30-31 Mart 2013 — Özyeğin Üniversitesi"
-msgstr ""
+msgstr "March 30-31, 2013 - Özyeğin University"
 
 #: templates/layout.html:49
 msgid ""
@@ -81,11 +81,11 @@ msgstr ""
 
 #: templates/layout.html:68
 msgid "Altın Sponsorlar"
-msgstr ""
+msgstr "Gold Sponsors"
 
 #: templates/layout.html:87
 msgid "Medya Sponsoru"
-msgstr ""
+msgstr "Media Sponsors"
 
 #: templates/layout.html:92
 msgid "JsPy'a destek olmak mı istiyorsunuz?"
@@ -101,15 +101,15 @@ msgstr ""
 
 #: templates/layout.html:104
 msgid "30 Mart"
-msgstr ""
+msgstr "March 30"
 
 #: templates/layout.html:105
 msgid "31 Mart"
-msgstr ""
+msgstr "March 31"
 
 #: templates/layout.html:107
 msgid "Abone Ol"
-msgstr ""
+msgstr "Subscribe"
 
 #: templates/layout.html:109
 msgid "Google Takvim ile Abone Ol"
@@ -121,7 +121,7 @@ msgstr ""
 
 #: templates/layout.html:552
 msgid "Özyeğin Üniversitesi"
-msgstr ""
+msgstr "Özyeğin University"
 
 #: templates/layout.html:562
 msgid "Etkinlik Yerine Ulaşım ve Diğer Bilgiler"
@@ -201,9 +201,9 @@ msgstr ""
 
 #: templates/layout.html:613
 msgid "Organizasyon"
-msgstr ""
+msgstr "Organization"
 
 #: templates/layout.html:629
 msgid "JsPy Modern Web Teknolojileri Konferansı 2013"
-msgstr ""
+msgstr "JsPyConf 2013"
 
