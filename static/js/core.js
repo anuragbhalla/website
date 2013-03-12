@@ -116,7 +116,9 @@ $(document).ready(function() {
         $.fancybox.open({
                     href: 'static/iframe.html',
                     type: 'iframe',
-                    height: 500,
+                    fitToView: false,
+                    autoSize: false,
+                    height: '70%',
                     helpers: {
                         overlay : {
                             locked: false
