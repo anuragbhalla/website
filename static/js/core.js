@@ -83,7 +83,7 @@ $(document).ready(function() {
     // Folded Paper Plugin
     if ($('html').hasClass('csstransforms3d') && !folded)
     {
-        window.$domi = new OriDomi($('#blog ul')[0], { vPanels: 1, hPanels: 5,  shading: false, speed: 0, touchEnabled: false });
+        window.$domi = new OriDomi($('#blog ul')[0], { vPanels: 1, hPanels: $('#blog ul li').length,  shading: false, speed: 0, touchEnabled: false });
         $domi.settings.speed = 0;
         $domi._setTweening(true);
         $domi.stairs(100, 'top');
