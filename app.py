@@ -21,7 +21,7 @@ def get_locale():
 
 @app.route("/")
 def index():
-    return render_template("index.html", statuses=get_statuses())
+    return render_template("index.html", statuses=get_statuses(), locale=get_locale())
 
 if __name__ == "__main__":
     import sys
