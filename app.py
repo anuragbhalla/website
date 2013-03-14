@@ -7,6 +7,7 @@ from utils import get_statuses
 DEFAULT_LOCALE = "tr"
 
 app = Flask(__name__)
+app.jinja_env.add_extension("jinja2htmlcompress.HTMLCompress")
 babel = Babel(app)
 
 
