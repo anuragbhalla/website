@@ -14,7 +14,11 @@ $(document).ready(function() {
     // Smooth Scroll To Element
     $('a:not(#intro .button)').click(function(e)
     {
-        if($(this).attr('href')[0] == '#')
+        if($(this).hasClass('third'))
+        {
+            e.preventDefault();
+        }
+        else if($(this).attr('href')[0] == '#')
         {
             var top = $(this).attr('href') == '#'? 0 : $($(this).attr('href')).offset().top;
             $('html, body').stop().animate({'scrollTop':top-($('#header').height()+70)}, 600);
