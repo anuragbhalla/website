@@ -20,7 +20,7 @@ def get_statuses():
     if statuses is not None:
         return statuses
 
-    params = ("screen_name={screen_name}&count=5&exclude_replies=true&"
+    params = ("screen_name={screen_name}&count=10&exclude_replies=true&"
               "include_entities=false&include_rts=false&trim_user=true")
     url_fmt = "{url}{resource}?{params}".format
     url = url_fmt(
