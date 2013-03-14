@@ -115,23 +115,6 @@ $(document).ready(function() {
     // Open first answer
     $('#faq li').eq(0).click();
 
-
-    $('#intro .button').click(function() {
-        $.fancybox.open({
-                    href: 'static/iframe.html',
-                    type: 'iframe',
-                    fitToView: false,
-                    autoSize: false,
-                    height: '70%',
-                    helpers: {
-                        overlay : {
-                            locked: false
-                        }
-                    }
-                });
-        return false;
-    });
-
     // Schedule
     (function()
     {
