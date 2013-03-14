@@ -13,7 +13,7 @@ babel = Babel(app)
 
 @babel.localeselector
 def get_locale():
-    return request.accept_languages.best_match(["tr", "en"],
+    return request.accept_languages.best_match(("tr", "en"),
                                                default=DEFAULT_LOCALE)
 
 
