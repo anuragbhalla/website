@@ -9,6 +9,160 @@
     {% endfor %}
 {% endblock %}
 
+{% block schedule %}
+    <ul class="schedule-tab">
+        <li><a href="#first-day" class="first">{{ _("30 Mart") }}</a></li>
+        <li><a href="#second-day" class="second">{{ _("31 Mart") }}</a></li>
+        <li class="subscribe">
+            <a href="#" class="third">{{ _("Abone Ol") }}</a>
+            <ul>
+                <li><a href="#">{{ _("Google Takvim ile Abone Ol") }}</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="inner">
+        <ul id="first-day" class="schedule-tiles">
+            <li>
+                <span class="time">09:30 - 10:00</span>
+                <span class="saloon">(Salon 1)</span>
+                <h2>Açılış Konuşması</h2>
+                <h3>Cihan Okyay</h3>
+            </li>
+            <li>
+                <span class="time">10:00 - 10:45</span>
+                <span class="saloon">(Salon 1)</span>
+                <h2>Standardized real-time events with EventSource</h2>
+                <h3>Burak Yiğit Kaya</h3>
+            </li>
+            <li>
+                <span class="time">11:00 - 11:45</span>
+                <span class="saloon">(Salon 1)</span>
+                <h2>Python ve Ruby ile Gerçek Zamanlı Web Uygulamaları</h2>
+                <h3>Emrah Ayanoğlu</h3>
+            </li>
+            <li class="last">
+                <span class="time">12:00 - 12:45</span>
+                <span class="saloon">(Salon 1)</span>
+                <h2>Python for Humans</h2>
+                <h3>Kenneth Reitz</h3>
+            </li>
+            <li>
+                <span class="time">13:45 - 14:15</span>
+                <span class="saloon">(Salon 1)</span>
+                <h2>Python ile Bir Değişim Hikayesi</h2>
+                <h3>Kadir Pekel</h3>
+                <span class="sponsor-badge active"><span>Sponsor</span></span>
+            </li>
+            <li>
+                <span class="time">14:30 - 15:15</span>
+                <span class="saloon">(Salon 1)</span>
+                <h2>The Holy Grail: Client &amp; Server</h2>
+                <h3>Tim Branyen</h3>
+            </li>
+            <li>
+                <span class="time">15:30 - 16:15</span>
+                <span class="saloon">(Salon 1)</span>
+                <h2>Single-Page Apps with Ember</h2>
+                <h3>Nathan Rapheld</h3>
+            </li>
+            <li class="last">
+                <span class="time">16:30 - 17:15</span>
+                <span class="saloon">(Salon 1)</span>
+                <h2>Python Optimizasyon ve Performans Tüyoları</h2>
+                <h3>Özgür Vatansever</h3>
+            </li>
+            <li>
+                <span class="time">10:00 - 11:30</span>
+                <span class="saloon">(Salon 2)</span>
+                <h2>TBA</h2>
+                <h3>Sinan Yaşar</h3>
+            </li>
+            <li>
+                <span class="time">11:45 - 12:45</span>
+                <span class="saloon">(Salon 2)</span>
+                <h2>JavaScript ve PhoneGap ile Mobil Uygulama Geliştirmek</h2>
+                <h3>Altan Yılmaz</h3>
+            </li>
+            <li>
+                <span class="time">14:00 - 15:30</span>
+                <span class="saloon">(Salon 2)</span>
+                <h2>Deneyimli Programcılar için Django'ya Giriş</h2>
+                <h3>Serdar Dalgıç</h3>
+            </li>
+            <li class="last">
+                <span class="time">16:00 - 17:30</span>
+                <span class="saloon">(Salon 2)</span>
+                <h2>Konum Bazlı Veri Nasıl Saklanır, Aranır ve Görselleştirilir?</h2>
+                <h3>Taylan Pince</h3>
+            </li>
+        </ul>
+
+        <ul id="second-day" class="schedule-tiles">
+            <li>
+                <span class="time">10:00 - 10:45</span>
+                <span class="saloon">(Salon 1)</span>
+                <h2>Django ORM Optimizasyonu</h2>
+                <h3>Fatih Erikli</h3>
+            </li>
+            <li>
+                <span class="time">11:00 - 11:45</span>
+                <span class="saloon">(Salon 1)</span>
+                <h2>API Design and Implementation Using MongoDB and Tastypie</h2>
+                <h3>Tayfun Şen</h3>
+            </li>
+            <li>
+                <span class="time">12:00 - 12:45</span>
+                <span class="saloon">(Salon 1)</span>
+                <h2>JavaScript Tools for Developer Happiness</h2>
+                <h3>James A. Rosen</h3>
+            </li>
+            <li class="last">
+                <span class="time">13:45 - 14:15</span>
+                <span class="saloon">(Salon 1)</span>
+                <h2>TBA</h2>
+                <h3>Sinan Yaşar</h3>
+            </li>
+            <li>
+                <span class="time">14:30 - 15:15</span>
+                <span class="saloon">(Salon 1)</span>
+                <h2>Merhaba Sinatra!</h2>
+                <h3>Uğur Özyılmazel</h3>
+            </li>
+            <li>
+                <span class="time">15:30 - 16:15</span>
+                <span class="saloon">(Salon 1)</span>
+                <h2>TBA</h2>
+                <h3>Charles McCathieNevile</h3>
+            </li>
+            <li>
+                <span class="time">16:30 - 17:15</span>
+                <span class="saloon">(Salon 1)</span>
+                <h2 style="font-size: 14px;">JavaScript Web Uygulamaları ile Arama Motorlarının Arasındaki Husumeti Gidermek</h2>
+                <h3>Osman Yüksel</h3>
+            </li>
+            <li class="last">
+                <span class="time">10:00 - 11:30</span>
+                <span class="saloon">(Salon 2)</span>
+                <h2>JavaScript Sourcemaps 101</h2>
+                <h3>Murat Çorlu</h3>
+            </li>
+            <li>
+                <span class="time">14:00 - 15:30</span>
+                <span class="saloon">(Salon 2)</span>
+                <h2>TBA</h2>
+                <h3>Chris Thorn</h3>
+            </li>
+            <li>
+                <span class="time">16:00 - 16:45</span>
+                <span class="saloon">(Salon 2)</span>
+                <h2>Kurtulur muyum bunalımdan, hamakta sallansam</h2>
+                <h3>Kadir Pekel</h3>
+            </li>
+        </ul>
+    </div>
+{% endblock %}
+
 {% block organizators %}
 <ul class="frame">
     <li>
