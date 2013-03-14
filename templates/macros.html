@@ -1,0 +1,5 @@
+{% macro turkish_locale_only() %}
+    {% if locale == "tr" %}
+        {{ caller() }}
+    {% endif %}
+{% endmacro %}
