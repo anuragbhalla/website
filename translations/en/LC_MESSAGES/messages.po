@@ -59,7 +59,7 @@ msgstr ""
 
 #: templates/layout.html:47
 msgid "JsPy Konferansı"
-msgstr "JsPyConf"
+msgstr "JsPy Conference"
 
 #: templates/layout.html:48
 msgid "30-31 Mart 2013 — Özyeğin Üniversitesi"
