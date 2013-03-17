@@ -3,23 +3,12 @@
 import requests
 
 from requests_oauthlib import OAuth1
-from werkzeug.contrib.cache import SimpleCache
 
 from errors import ImproperlyConfigured
-try:
-    from settings import twitter
-except ImportError:
-    msg = "Kurulum için lütfen README.md belgesini okuyun."
-    raise ImproperlyConfigured(msg)
-
-cache = SimpleCache()
+from settings import twitter
 
 
 def get_statuses():
-    statuses = cache.get("statuses")
-    if statuses is not None:
-        return statuses
-
     params = ("screen_name={screen_name}&count=10&exclude_replies=true&"
               "include_entities=false&include_rts=false&trim_user=true")
     url_fmt = "{url}{resource}?{params}".format
@@ -37,5 +26,4 @@ def get_statuses():
         signature_type="auth_header",
     )
     response = requests.get(url, auth=auth)
-    cache.set("statuses", response.json(), timeout=60 * 60)
     return response.json()

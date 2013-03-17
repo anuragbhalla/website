@@ -1,7 +1,15 @@
+# coding: utf-8
+
 from flask import Flask, request, render_template
 from flaskext.babel import Babel
 
-from settings import DEBUG, PORT
+from decorators import cached
+from errors import ImproperlyConfigured
+try:
+    from settings import DEBUG, PORT
+except ImportError:
+    msg = "Kurulum için lütfen README.md belgesini okuyun."
+    raise ImproperlyConfigured(msg)
 from utils import get_statuses
 
 DEFAULT_LOCALE = "tr"
@@ -18,6 +26,7 @@ def get_locale():
 
 
 @app.route("/")
+@cached(timeout=60 * 60)
 def index():
     return render_template("index.html", statuses=get_statuses(),
                            locale=get_locale())
