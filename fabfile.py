@@ -21,7 +21,7 @@ def venv():
 def deploy():
     """Deploy the latest version."""
     with venv():
-        run('git pull')
+        run('git pull origin master')
         update_dependencies()
 
     restart()
