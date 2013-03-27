@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-03-27 08:44+0200\n"
+"POT-Creation-Date: 2013-03-27 10:26+0200\n"
 "PO-Revision-Date: 2013-03-09 11:46+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -17,6 +17,19 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.6\n"
+
+#: filters.py:18
+msgid "bugün"
+msgstr "today"
+
+#: filters.py:20
+msgid "dün"
+msgstr "yesterday"
+
+#: filters.py:22
+#, python-format
+msgid "%(days)d gün önce"
+msgstr "%(days)d days ago"
 
 #: templates/index.html:14
 msgid "30 Mart"
@@ -132,3 +145,4 @@ msgstr "ORGANIZATION"
 #: templates/layout.html:399
 msgid "JsPy Modern Web Teknolojileri Konferansı 2013"
 msgstr "JsPyConf 2013"
+

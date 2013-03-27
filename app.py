@@ -5,6 +5,7 @@ from flaskext.babel import Babel
 
 from decorators import cached
 from errors import ImproperlyConfigured
+from filters import humanize
 try:
     from settings import DEBUG, PORT
 except ImportError:
@@ -16,6 +17,7 @@ DEFAULT_LOCALE = "tr"
 
 app = Flask(__name__)
 app.jinja_env.add_extension("jinja2htmlcompress.HTMLCompress")
+app.jinja_env.filters["humanize"] = humanize
 babel = Babel(app)
 
 
