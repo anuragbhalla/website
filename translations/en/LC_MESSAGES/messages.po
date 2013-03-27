@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-03-12 13:43+0200\n"
+"POT-Creation-Date: 2013-03-27 08:44+0200\n"
 "PO-Revision-Date: 2013-03-09 11:46+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -18,11 +18,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.6\n"
 
-#: templates/layout.html:5
+#: templates/index.html:14
+msgid "30 Mart"
+msgstr "March 30"
+
+#: templates/index.html:15
+msgid "31 Mart"
+msgstr "March 31"
+
+#: templates/layout.html:6
 msgid "JsPy Modern Web Konferansı 2013"
 msgstr "JsPyConf 2013"
 
-#: templates/layout.html:6
+#: templates/layout.html:7
 msgid ""
 "Modern web teknolojileri hakkında\n"
 "                                            Türkçe ve İngilizce sunumlar "
@@ -33,7 +41,7 @@ msgstr ""
 msgid "Ana Sayfa"
 msgstr "MAIN PAGE"
 
-#: templates/layout.html:32 templates/layout.html:65 templates/layout.html:74
+#: templates/layout.html:32 templates/layout.html:65 templates/layout.html:84
 msgid "Sponsorlar"
 msgstr "Sponsors"
 
@@ -41,7 +49,7 @@ msgstr "Sponsors"
 msgid "Program"
 msgstr "Schedule"
 
-#: templates/layout.html:34 templates/layout.html:353
+#: templates/layout.html:34 templates/layout.html:123
 msgid "Konuşmacılar"
 msgstr "Speakers"
 
@@ -65,16 +73,6 @@ msgstr "JsPy Conference"
 msgid "30-31 Mart 2013 — Özyeğin Üniversitesi"
 msgstr "March 30-31, 2013 - Özyeğin University"
 
-#: templates/layout.html:49
-msgid ""
-"Web'in yaşam standardı olduğu günümüz dünyasında bu teknolojinin en "
-"modern ve geniş\n"
-"            kullanımlı takipçilerinden JavaScript, Python ve Ruby "
-"programlama dilleri ve sundukları\n"
-"            avantajları Türkiye'de ilki düzenlenecek olan bu konferansta "
-"konuşuyoruz!"
-msgstr ""
-
 #: templates/layout.html:52
 msgid "Hemen Kaydol"
 msgstr "Register Now"
@@ -83,127 +81,54 @@ msgstr "Register Now"
 msgid "Altın Sponsorlar"
 msgstr "Gold Sponsors"
 
-#: templates/layout.html:87
-msgid "Medya Sponsoru"
-msgstr "Media Sponsors"
+#: templates/layout.html:74
+msgid "Gümüş Sponsor"
+msgstr "Silver Sponsor"
 
-#: templates/layout.html:92
+#: templates/layout.html:79
+msgid "Bronz Sponsor"
+msgstr "Bronze Sponsor"
+
+#: templates/layout.html:96
+msgid "Görsel İletişim Sponsoru"
+msgstr ""
+
+#: templates/layout.html:101
+msgid "Medya Sponsoru"
+msgstr "Media Sponsor"
+
+#: templates/layout.html:106
 msgid "JsPy'a destek olmak mı istiyorsunuz?"
 msgstr "Do you want to support JsPy?"
 
-#: templates/layout.html:93
+#: templates/layout.html:107
 msgid "Sponsorluk Dosyasını İndirin"
 msgstr "Download Sponsorship File"
 
-#: templates/layout.html:101
+#: templates/layout.html:115
 msgid "Konuşma Programı"
 msgstr "Schedule"
 
-#: templates/layout.html:104
-msgid "30 Mart"
-msgstr "March 30"
-
-#: templates/layout.html:105
-msgid "31 Mart"
-msgstr "March 31"
-
-#: templates/layout.html:107
-msgid "Abone Ol"
-msgstr "Subscribe"
-
-#: templates/layout.html:109
-msgid "Google Takvim ile Abone Ol"
-msgstr "Subscribe via Google Calendar"
-
-#: templates/layout.html:546
+#: templates/layout.html:316
 msgid "Etkinlik Yeri ve Ulaşım"
 msgstr "Venue &amp; Location"
 
-#: templates/layout.html:552
+#: templates/layout.html:322
 msgid "Özyeğin Üniversitesi"
 msgstr "Özyeğin University"
 
-#: templates/layout.html:562
-msgid "Etkinlik Yerine Ulaşım ve Diğer Bilgiler"
-msgstr ""
-
-#: templates/layout.html:564
-msgid ""
-"\n"
-"                    Etkinlik günleri boyunca sabahları 08:30 - 09:30 "
-"arası öğlenleri ise 12:30 - 13:00 arası Özyeğin Üniversitesi Altunizade "
-"Kampüsü\n"
-"                    önünden servis kaldırılacaktır. Servislerimiz "
-"ucretsizdir. Kampus Altunizade metrobüs durağının hemen yanındadır. "
-"Altunizade Metrobus duraginda indikten\n"
-"                    sonra ust gecidi takip ederek kampuse kolayca "
-"ulasabilirsiniz. Yukarida belirtilen saatler disinda servis ile "
-"Cekmekoy'e gelmek isterseniz, Özyeğin Üniversitesinin saat başı\n"
-"                    yine aynı yerden <a href=\"http://ozyegin.edu.tr"
-"/OzUDE-YASAM/Kampuslere-Ulasim/Altunizade-Cekmekoy-Altunizade-Shuttle-"
-"Hours\">kalkan servislerini</a> 2 TL karşılığında gün boyunca \n"
-"                    kullanabilirsiniz. Etkinlik sonunda yine Çekmeköy "
-"Yerleşkesinden Özyeğin Üniversitesi Altunizade Kampüsüne servis "
-"kaldırılacaktır.\n"
-"                    "
-msgstr ""
-
-#: templates/layout.html:573
-msgid "Araç ile Çekmeköy Kampüsü’ne Ulaşım:"
-msgstr ""
-
-#: templates/layout.html:575
-msgid ""
-"\n"
-"                D100 – Edirne/Topkapı – 1. Köprü İstikametinden "
-"Gelinirse: Köprüden çıktıktan 2 km sonra Ümraniye - Şile sapağından "
-"sapınız. Hiçbir yöne sapmadan Şile tabelasını \n"
-"                yaklaşık 23 km takip ettikten sonra Taşdelen Mevki’nde, "
-"yolun solunda Ford Bayi göreceksiniz. Özyeğin Üniversitesi Kampüsü, "
-"Ford’u 5 km geçtikten sonra sol tarafta yer alıyor. \n"
-"                Kampüsü geçerek 2 km ilerideki adadan (Ömerli Göbeği) U "
-"dönüşü gerçekleştirip yön levhalarını takip ediniz.\n"
-"\n"
-"                <br />\n"
-"                <br />\n"
-"                TEM – Edirne – 2. Köprü İstikametinden Gelinirse: "
-"Köprüden çıktıktan sonra Ümraniye – Şile sapağına kadar devam ediniz. \n"
-"                Ümraniye – Şile sapağından saptıktan yaklaşık 15 km sonra"
-" Taşdelen Mevki’nde, yolun solunda Ford Bayi göreceksiniz. \n"
-"                Özyeğin Üniversitesi Kampüsü, Ford’u 5 km geçtikten sonra"
-" sol tarafta yer alıyor. Kampüsü geçerek 2 km ilerideki adadan \n"
-"                (Ömerli Göbeği) U dönüşü gerçekleştirip yön levhalarını "
-"takip ediniz.\n"
-"\n"
-"                <br />\n"
-"                <br />\n"
-"                TEM – Ankara İstikametinden Gelinirse: Gişelerden "
-"çıktıktan sonra Fatih Sultan Mehmet Köprüsü tabelasından sapınız. Şile – "
-"Ümraniye\n"
-"                çıkışına kadar yolu takip ediniz. Şile – Ümraniye "
-"sapağından saptıktan yaklaşık 15 km sonra Taşdelen Mevki’nde, yolun\n"
-"                solunda Ford Bayi göreceksiniz. Özyeğin Üniversitesi "
-"Kampüsü, Ford’u 5 km geçtikten sonra sol tarafta yer alıyor. \n"
-"                Kampüsü geçerek 2 km ilerideki adadan (Ömerli Göbeği) U "
-"dönüşü gerçekleştirip yön levhalarını takip ediniz.\n"
-"                </p>\n"
-"\n"
-"                "
-msgstr ""
-
-#: templates/layout.html:605
+#: templates/layout.html:375
 msgid "Aklınıza takılan bir sorunuz mu var?"
 msgstr "Have something to ask?"
 
-#: templates/layout.html:606
+#: templates/layout.html:376
 msgid "Bize Ulaşın"
 msgstr "Contact Us"
 
-#: templates/layout.html:613
+#: templates/layout.html:383
 msgid "Organizasyon"
 msgstr "ORGANIZATION"
 
-#: templates/layout.html:629
+#: templates/layout.html:399
 msgid "JsPy Modern Web Teknolojileri Konferansı 2013"
 msgstr "JsPyConf 2013"
-
