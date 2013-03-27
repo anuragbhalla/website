@@ -2,7 +2,7 @@
 
 from contextlib import contextmanager
 
-from fabric.api import cd, env, get, local, put, run, sudo, prefix
+from fabric.api import cd, local, run, sudo, prefix
 
 from errors import ImproperlyConfigured
 try:

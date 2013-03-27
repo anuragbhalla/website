@@ -1,10 +1,8 @@
 # coding: utf-8
 
 import requests
-
 from requests_oauthlib import OAuth1
 
-from errors import ImproperlyConfigured
 from settings import twitter
 
 
