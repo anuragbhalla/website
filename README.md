@@ -43,7 +43,7 @@ $ make update
 $ make compile
 ```
 
-Bütün işlemleri tek seferde yapmak için:
+`extract` ve `update` komutlarını tek seferde çalıştırmak için:
 
 ```sh
 $ make

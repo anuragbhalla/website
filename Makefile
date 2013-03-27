@@ -1,4 +1,4 @@
-default:: extract update compile
+default:: extract update
 
 extract::
 	@pybabel extract -F babel.cfg -o translations/messages.pot .
