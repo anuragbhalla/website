@@ -1,3 +1,6 @@
+<!--
+Usage: from "macros.html" import turkish_locale_only with context
+-->
 {% macro turkish_locale_only() %}
     {% if locale == "tr" %}
         {{ caller() }}
