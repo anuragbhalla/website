@@ -5,3 +5,5 @@ venv/
 
 fabenv.py
 settings.py
+
+html/
