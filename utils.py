@@ -23,5 +23,7 @@ def get_statuses():
         twitter.get("access_token_secret"),
         signature_type="auth_header",
     )
-    response = requests.get(url, auth=auth)
-    return response.json()
+    response = requests.get(url, auth=auth).json()
+    if "errors" in response:
+        return None
+    return response
