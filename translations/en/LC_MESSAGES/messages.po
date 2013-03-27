@@ -104,7 +104,7 @@ msgstr "Bronze Sponsor"
 
 #: templates/layout.html:96
 msgid "Görsel İletişim Sponsoru"
-msgstr ""
+msgstr "Visual Communications Sponsor"
 
 #: templates/layout.html:101
 msgid "Medya Sponsoru"
