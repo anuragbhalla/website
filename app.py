@@ -1,11 +1,12 @@
 # coding: utf-8
 
-from flask import Flask, request, render_template
+from flask import Flask, jsonify, request, render_template
 from flaskext.babel import Babel
 
 from decorators import cached
 from errors import ImproperlyConfigured
 from filters import humanize
+from schedule import schedule
 try:
     from settings import DEBUG, PORT
 except ImportError:
@@ -32,6 +33,12 @@ def get_locale():
 def index():
     return render_template("index.html", statuses=get_statuses(),
                            locale=get_locale())
+
+
+@app.route("/schedule.json")
+@cached(timeout=60 * 60 * 5)
+def schedule_():
+    return jsonify(schedule=schedule)
 
 if __name__ == "__main__":
     import sys
