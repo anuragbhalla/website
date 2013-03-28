@@ -28,14 +28,14 @@ def get_locale():
                                                default=DEFAULT_LOCALE)
 
 
-@app.route("/")
+@app.route("/", methods=["GET"])
 @cached(timeout=60 * 60)
 def index():
     return render_template("index.html", statuses=get_statuses(),
                            locale=get_locale())
 
 
-@app.route("/schedule.json")
+@app.route("/schedule.json", methods=["GET"])
 @cached(timeout=60 * 60 * 5)
 def schedule_():
     return jsonify(schedule=schedule)
