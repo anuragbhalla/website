@@ -4,6 +4,8 @@ from datetime import datetime
 
 from flask import Flask, jsonify, request, render_template
 from flaskext.babel import Babel
+from flaskext.uploads import (UploadSet, configure_uploads, IMAGES,
+                              UploadNotAllowed)
 
 from decorators import cached
 from errors import ImproperlyConfigured
@@ -16,11 +18,16 @@ except ImportError:
     raise ImproperlyConfigured(msg)
 from utils import get_statuses
 
+UPLOADED_PHOTOS_DEST = 'static/uploads'
 
 app = Flask(__name__)
 app.jinja_env.add_extension("jinja2htmlcompress.HTMLCompress")
 app.jinja_env.filters["humanize"] = humanize
 babel = Babel(app)
+
+photos = UploadSet("photos", IMAGES,
+                   default_dest=lambda l: UPLOADED_PHOTOS_DEST)
+configure_uploads(app, photos)
 
 
 @babel.localeselector
@@ -30,6 +37,7 @@ def get_locale():
 
 
 on_event = datetime.utcnow().month == 3 and datetime.utcnow().day in (30, 31)
+
 
 @app.route("/", methods=["GET"])
 @cached(timeout=60 * 45,
@@ -60,6 +68,20 @@ def index():
 @cached(timeout=60 * 60 * 5)
 def schedule_():
     return jsonify(schedule=schedule)
+
+
+@app.route("/upload", methods=["POST"])
+def upload():
+    if "file" in request.files:
+        try:
+            email = request.form.get("email")
+            filename = request.files["file"]
+            photos.save(filename,
+                        name="{:s}_{:s}".format(email, filename.filename))
+        except UploadNotAllowed as e:
+            return jsonify(error=e.message)
+        return jsonify(message="good")
+    return u"Geçersiz işlem", 500
 
 if __name__ == "__main__":
     import sys
