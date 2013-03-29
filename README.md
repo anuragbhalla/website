@@ -49,6 +49,14 @@ $ make compile
 $ make
 ```
 
+## TODO
+
+* Uygulamayı daha modüler hale getirmek için [blueprints][flask-blueprints]
+  kullan.
+
+[flask-blueprints]: http://flask.pocoo.org/docs/blueprints/
+
+
 ## Lisans
 
 > This Source Code Form is subject to the terms of the Mozilla Public
