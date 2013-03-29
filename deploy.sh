@@ -3,9 +3,10 @@
 # için yeni Pardus ekibine teşekkürler.
 #
 # Kaynak: ftp://depo.pardus.org.tr/sources/build/files/pardus_config_kde.sh
+
 set -e
 
-echo "DEPLOY EDİLİYOR"
+echo "DEPLOY EDİLİYOR............"
 
 fab deploy
 
