@@ -138,7 +138,7 @@ schedule = [
     {
         "avatar": "/static/img/speakers/taylanpince.jpg",
         "name": u"Taylan Pince",
-        "title": u"Konum Bazlı Veri Nasıl Saklanır, Aranır ve Görselleştirilir?",
+        "title": u"Neredeyim Ben? Django ve Lokasyon Servisleri",
         "company": u"Hipo",
         "start": str_to_timestamp("16:00", day=1),
         "end": str_to_timestamp("17:30", day=1),
