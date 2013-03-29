@@ -1,5 +1,13 @@
 {% extends "layout.html" %}
 
+{% block intro %}
+    {% if on_event %}
+        {% include "on_event.html" ignore missing with context %}
+    {% else %}
+        {% include "before_event.html" ignore missing without context %}
+    {% endif %}
+{% endblock %}
+
 {% block blog %}
     {% include "blog.html" ignore missing with context %}
 {% endblock %}

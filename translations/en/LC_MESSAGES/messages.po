@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-03-27 10:26+0200\n"
+"POT-Creation-Date: 2013-03-29 07:29+0200\n"
 "PO-Revision-Date: 2013-03-09 11:46+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -31,13 +31,21 @@ msgstr "yesterday"
 msgid "%(days)d gün önce"
 msgstr "%(days)d days ago"
 
-#: templates/index.html:14
-msgid "30 Mart"
-msgstr "March 30"
+#: templates/before_event.html:2
+msgid "Istanbul"
+msgstr ""
 
-#: templates/index.html:15
-msgid "31 Mart"
-msgstr "March 31"
+#: templates/before_event.html:3 templates/on_event.html:3
+msgid "JsPy Konferansı"
+msgstr "JsPy Conference"
+
+#: templates/before_event.html:4
+msgid "30-31 Mart 2013 — Özyeğin Üniversitesi"
+msgstr "March 30-31, 2013 - Özyeğin University"
+
+#: templates/before_event.html:8
+msgid "Hemen Kaydol"
+msgstr "Register Now"
 
 #: templates/layout.html:6
 msgid "JsPy Modern Web Konferansı 2013"
@@ -54,7 +62,7 @@ msgstr ""
 msgid "Ana Sayfa"
 msgstr "MAIN PAGE"
 
-#: templates/layout.html:32 templates/layout.html:65 templates/layout.html:84
+#: templates/layout.html:32 templates/layout.html:52 templates/layout.html:71
 msgid "Sponsorlar"
 msgstr "Sponsors"
 
@@ -62,7 +70,7 @@ msgstr "Sponsors"
 msgid "Program"
 msgstr "Schedule"
 
-#: templates/layout.html:34 templates/layout.html:123
+#: templates/layout.html:34 templates/layout.html:110
 msgid "Konuşmacılar"
 msgstr "Speakers"
 
@@ -74,75 +82,78 @@ msgstr "FAQ"
 msgid "Ulaşım"
 msgstr "Venue"
 
-#: templates/layout.html:46
-msgid "Istanbul"
-msgstr ""
-
-#: templates/layout.html:47
-msgid "JsPy Konferansı"
-msgstr "JsPy Conference"
-
-#: templates/layout.html:48
-msgid "30-31 Mart 2013 — Özyeğin Üniversitesi"
-msgstr "March 30-31, 2013 - Özyeğin University"
-
-#: templates/layout.html:52
-msgid "Hemen Kaydol"
-msgstr "Register Now"
-
-#: templates/layout.html:68
+#: templates/layout.html:55
 msgid "Altın Sponsorlar"
 msgstr "Gold Sponsors"
 
-#: templates/layout.html:74
+#: templates/layout.html:61
 msgid "Gümüş Sponsor"
 msgstr "Silver Sponsor"
 
-#: templates/layout.html:79
+#: templates/layout.html:66
 msgid "Bronz Sponsor"
 msgstr "Bronze Sponsor"
 
-#: templates/layout.html:96
+#: templates/layout.html:83
 msgid "Görsel İletişim Sponsoru"
 msgstr "Visual Communications Sponsor"
 
-#: templates/layout.html:101
+#: templates/layout.html:88
 msgid "Medya Sponsoru"
 msgstr "Media Sponsor"
 
-#: templates/layout.html:106
+#: templates/layout.html:93
 msgid "JsPy'a destek olmak mı istiyorsunuz?"
 msgstr "Do you want to support JsPy?"
 
-#: templates/layout.html:107
+#: templates/layout.html:94
 msgid "Sponsorluk Dosyasını İndirin"
 msgstr "Download Sponsorship File"
 
-#: templates/layout.html:115
+#: templates/layout.html:102
 msgid "Konuşma Programı"
 msgstr "Schedule"
 
-#: templates/layout.html:316
+#: templates/layout.html:119
 msgid "Etkinlik Yeri ve Ulaşım"
 msgstr "Venue &amp; Location"
 
-#: templates/layout.html:322
+#: templates/layout.html:125
 msgid "Özyeğin Üniversitesi"
 msgstr "Özyeğin University"
 
-#: templates/layout.html:375
+#: templates/layout.html:142
 msgid "Aklınıza takılan bir sorunuz mu var?"
 msgstr "Have something to ask?"
 
-#: templates/layout.html:376
+#: templates/layout.html:143
 msgid "Bize Ulaşın"
 msgstr "Contact Us"
 
-#: templates/layout.html:383
+#: templates/layout.html:150
 msgid "Organizasyon"
 msgstr "ORGANIZATION"
 
-#: templates/layout.html:399
+#: templates/layout.html:166
 msgid "JsPy Modern Web Teknolojileri Konferansı 2013"
 msgstr "JsPyConf 2013"
+
+#: templates/on_event.html:10
+msgid "Canlı"
+msgstr "Live"
+
+#: templates/on_event.html:15
+msgid ""
+"Şu an canlı yayınımız yok. En yakın canlı yayının ne zaman başlayacağını "
+"öğrenmek için lütfen\n"
+"            konuşma programına bakın."
+msgstr ""
+
+#: templates/schedule.html:2
+msgid "30 Mart"
+msgstr "March 30"
+
+#: templates/schedule.html:3
+msgid "31 Mart"
+msgstr "March 31"
 

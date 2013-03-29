@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-03-27 10:26+0200\n"
+"POT-Creation-Date: 2013-03-29 07:29+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,12 +30,20 @@ msgstr ""
 msgid "%(days)d gün önce"
 msgstr ""
 
-#: templates/index.html:14
-msgid "30 Mart"
+#: templates/before_event.html:2
+msgid "Istanbul"
 msgstr ""
 
-#: templates/index.html:15
-msgid "31 Mart"
+#: templates/before_event.html:3 templates/on_event.html:3
+msgid "JsPy Konferansı"
+msgstr ""
+
+#: templates/before_event.html:4
+msgid "30-31 Mart 2013 — Özyeğin Üniversitesi"
+msgstr ""
+
+#: templates/before_event.html:8
+msgid "Hemen Kaydol"
 msgstr ""
 
 #: templates/layout.html:6
@@ -53,7 +61,7 @@ msgstr ""
 msgid "Ana Sayfa"
 msgstr ""
 
-#: templates/layout.html:32 templates/layout.html:65 templates/layout.html:84
+#: templates/layout.html:32 templates/layout.html:52 templates/layout.html:71
 msgid "Sponsorlar"
 msgstr ""
 
@@ -61,7 +69,7 @@ msgstr ""
 msgid "Program"
 msgstr ""
 
-#: templates/layout.html:34 templates/layout.html:123
+#: templates/layout.html:34 templates/layout.html:110
 msgid "Konuşmacılar"
 msgstr ""
 
@@ -73,75 +81,78 @@ msgstr ""
 msgid "Ulaşım"
 msgstr ""
 
-#: templates/layout.html:46
-msgid "Istanbul"
-msgstr ""
-
-#: templates/layout.html:47
-msgid "JsPy Konferansı"
-msgstr ""
-
-#: templates/layout.html:48
-msgid "30-31 Mart 2013 — Özyeğin Üniversitesi"
-msgstr ""
-
-#: templates/layout.html:52
-msgid "Hemen Kaydol"
-msgstr ""
-
-#: templates/layout.html:68
+#: templates/layout.html:55
 msgid "Altın Sponsorlar"
 msgstr ""
 
-#: templates/layout.html:74
+#: templates/layout.html:61
 msgid "Gümüş Sponsor"
 msgstr ""
 
-#: templates/layout.html:79
+#: templates/layout.html:66
 msgid "Bronz Sponsor"
 msgstr ""
 
-#: templates/layout.html:96
+#: templates/layout.html:83
 msgid "Görsel İletişim Sponsoru"
 msgstr ""
 
-#: templates/layout.html:101
+#: templates/layout.html:88
 msgid "Medya Sponsoru"
 msgstr ""
 
-#: templates/layout.html:106
+#: templates/layout.html:93
 msgid "JsPy'a destek olmak mı istiyorsunuz?"
 msgstr ""
 
-#: templates/layout.html:107
+#: templates/layout.html:94
 msgid "Sponsorluk Dosyasını İndirin"
 msgstr ""
 
-#: templates/layout.html:115
+#: templates/layout.html:102
 msgid "Konuşma Programı"
 msgstr ""
 
-#: templates/layout.html:316
+#: templates/layout.html:119
 msgid "Etkinlik Yeri ve Ulaşım"
 msgstr ""
 
-#: templates/layout.html:322
+#: templates/layout.html:125
 msgid "Özyeğin Üniversitesi"
 msgstr ""
 
-#: templates/layout.html:375
+#: templates/layout.html:142
 msgid "Aklınıza takılan bir sorunuz mu var?"
 msgstr ""
 
-#: templates/layout.html:376
+#: templates/layout.html:143
 msgid "Bize Ulaşın"
 msgstr ""
 
-#: templates/layout.html:383
+#: templates/layout.html:150
 msgid "Organizasyon"
 msgstr ""
 
-#: templates/layout.html:399
+#: templates/layout.html:166
 msgid "JsPy Modern Web Teknolojileri Konferansı 2013"
+msgstr ""
+
+#: templates/on_event.html:10
+msgid "Canlı"
+msgstr ""
+
+#: templates/on_event.html:15
+msgid ""
+"Şu an canlı yayınımız yok. En yakın canlı yayının ne zaman başlayacağını "
+"öğrenmek için lütfen\n"
+"            konuşma programına bakın."
+msgstr ""
+
+#: templates/schedule.html:2
+msgid "30 Mart"
+msgstr ""
+
+#: templates/schedule.html:3
+msgid "31 Mart"
 msgstr ""
 

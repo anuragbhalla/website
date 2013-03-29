@@ -1,5 +1,7 @@
 # coding: utf-8
 
+from datetime import datetime
+
 from flask import Flask, jsonify, request, render_template
 from flaskext.babel import Babel
 
@@ -27,11 +29,31 @@ def get_locale():
                                                default=DEFAULT_LOCALE)
 
 
+on_event = datetime.utcnow().month == 3 and datetime.utcnow().day in (30, 31)
+
 @app.route("/", methods=["GET"])
-@cached(timeout=60 * 60)
+@cached(timeout=60 * 45,
+        key="on-event/%s" if on_event else "before-event/%s")
 def index():
+    def day():
+        if datetime.utcnow().month == 3:
+            day = {30: 1, 31: 2}
+            try:
+                return day[datetime.utcnow().day]
+            except KeyError:
+                return 0
+        return 0
+
+    def current_talk():
+        now = datetime.utcnow().strftime("%s")
+        for talk in schedule:
+            if talk["start"] <= now <= talk["end"]:
+                return talk
+        return None  # Explicit is better than implicit.
+
     return render_template("index.html", statuses=get_statuses(),
-                           locale=get_locale())
+                           locale=get_locale(), on_event=on_event,
+                           day=day(), current_talk=current_talk())
 
 
 @app.route("/schedule.json", methods=["GET"])

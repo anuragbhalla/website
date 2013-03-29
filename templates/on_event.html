@@ -1,0 +1,27 @@
+<div class="container">
+    <span class="city">{{ day }}.<span> </span>Gün</span>
+    <h1>{{ _("JsPy Konferansı") }}</h1>
+
+    <div class="stream">
+        <div class="video-player">
+            <iframe src="http://s.pozitifhd.com/player/50103" width="640" height="360" frameborder="0" scrolling="no"></iframe>
+            <div class="corner lt"></div><div class="corner rt"></div><div class="corner lb"></div><div class="corner rb"></div>
+            {% if current_talk %}
+            <span class="live">{{ _("Canlı") }}</span>
+
+            <h2>{{ current_talk.title }}</h2>
+            <h3>{{ current_talk.name }}</h3>
+            {% else %}
+            <p>{{ _("Şu an canlı yayınımız yok. En yakın canlı yayının ne zaman başlayacağını öğrenmek için lütfen
+            konuşma programına bakın.") }}</p>
+            {% endif %}
+
+        </div><!-- end player -->
+        <div class="twitter-posts">
+            <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=%23jspyconf"  data-widget-id="317496902268633088">Tweets about "#jspyconf"</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+        </div><!-- end twitter-posts -->
+    </div><!-- end stream -->
+
+</div><!-- end container -->
