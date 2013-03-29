@@ -4,7 +4,7 @@
         <ul>
             {% for status in statuses %}
                 <li class="{{ loop.cycle('odd', 'even') }}">
-                    <p>{{ status.text }}</p>
+                    <p>{{ status.text|urlize(nofollow=True) }}</p>
                     <a href="https://twitter.com/jspyconf/status/{{ status.id }}">{{ status.created_at|humanize }}</a>
                 </li>
             {% endfor %}
