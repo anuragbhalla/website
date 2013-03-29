@@ -8,13 +8,12 @@ from errors import ImproperlyConfigured
 from filters import humanize
 from schedule import schedule
 try:
-    from settings import DEBUG, PORT
+    from settings import DEBUG, PORT, DEFAULT_LOCALE
 except ImportError:
     msg = "Kurulum için lütfen README.md belgesini okuyun."
     raise ImproperlyConfigured(msg)
 from utils import get_statuses
 
-DEFAULT_LOCALE = "tr"
 
 app = Flask(__name__)
 app.jinja_env.add_extension("jinja2htmlcompress.HTMLCompress")

@@ -1,6 +1,8 @@
 DEBUG = True
 PORT = 5000
 
+DEFAULT_LOCALE = "tr"
+
 twitter = dict(
     api_url="https://api.twitter.com/1.1/",
     consumer_key="",
