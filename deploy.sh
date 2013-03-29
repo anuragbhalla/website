@@ -8,6 +8,8 @@ set -e
 
 echo "DEPLOY EDİLİYOR............"
 
+####### DEPLOYING WEBSITE
+
 fab deploy
 
 echo "DEPLOY EDİLDİ."
