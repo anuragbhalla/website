@@ -1,5 +1,9 @@
 <div class="container">
+    {%  if locale == "tr" %}
     <span class="city">{{ day }}.<span> </span>Gün</span>
+    {% else %}
+        <span class="city">Day<span> </span>{{ day }}</span>
+    {% endif %}
     <h1>{{ _("JsPy Konferansı") }}</h1>
 
     <div class="stream">
