@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-03-29 07:29+0200\n"
+"POT-Creation-Date: 2013-03-29 07:55+0200\n"
 "PO-Revision-Date: 2013-03-09 11:46+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -46,6 +46,18 @@ msgstr "March 30-31, 2013 - Özyeğin University"
 #: templates/before_event.html:8
 msgid "Hemen Kaydol"
 msgstr "Register Now"
+
+#: templates/faq.html:3
+msgid "Sıkça Sorulan Sorular"
+msgstr "Frequently Asked Questions"
+
+#: templates/faq.html:22
+msgid "Aklınıza takılan bir sorunuz mu var?"
+msgstr "Have something to ask?"
+
+#: templates/faq.html:23
+msgid "Bize Ulaşın"
+msgstr "Contact Us"
 
 #: templates/layout.html:6
 msgid "JsPy Modern Web Konferansı 2013"
@@ -114,27 +126,19 @@ msgstr "Download Sponsorship File"
 msgid "Konuşma Programı"
 msgstr "Schedule"
 
-#: templates/layout.html:119
+#: templates/layout.html:121
 msgid "Etkinlik Yeri ve Ulaşım"
 msgstr "Venue &amp; Location"
 
-#: templates/layout.html:125
+#: templates/layout.html:127
 msgid "Özyeğin Üniversitesi"
 msgstr "Özyeğin University"
 
-#: templates/layout.html:142
-msgid "Aklınıza takılan bir sorunuz mu var?"
-msgstr "Have something to ask?"
-
 #: templates/layout.html:143
-msgid "Bize Ulaşın"
-msgstr "Contact Us"
-
-#: templates/layout.html:150
 msgid "Organizasyon"
 msgstr "ORGANIZATION"
 
-#: templates/layout.html:166
+#: templates/layout.html:159
 msgid "JsPy Modern Web Teknolojileri Konferansı 2013"
 msgstr "JsPyConf 2013"
 

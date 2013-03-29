@@ -20,6 +20,10 @@
     {% include "speakers.html" ignore missing without context %}
 {% endblock %}
 
+{% block faq %}
+    {% include "faq.html" ignore missing with context %}
+{% endblock %}
+
 {% block transportation %}
     {% include "transportation.html" ignore missing without context %}
 {% endblock %}
