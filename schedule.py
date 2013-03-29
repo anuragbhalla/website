@@ -48,10 +48,10 @@ schedule = [
         "is_sponsor": False
     },
     {
-        "avatar": "/static/img/speakers/kenneth.jpg",
-        "name": u"Kenneth Reitz",
-        "title": u"Python for Humans",
-        "company": u"Heroku",
+        "avatar": "/static/img/speakers/jamesrosen.jpg",
+        "name": u"James A. Rosen",
+        "title": u"Tools for JavaScript Development Happiness",
+        "company": u"Zendesk",
         "start": str_to_timestamp("12:00", day=1),
         "end": str_to_timestamp("12:45", day=1),
         "day": 1,
@@ -169,10 +169,10 @@ schedule = [
         "is_sponsor": False
     },
     {
-        "avatar": "/static/img/speakers/jamesrosen.jpg",
-        "name": u"James A. Rosen",
-        "title": u"JavaScript Tools for Developer Happiness",
-        "company": u"Zendesk",
+        "avatar": "/static/img/speakers/kenneth.jpg",
+        "name": u"Kenneth Reitz",
+        "title": u"Python for Humans",
+        "company": u"Heroku",
         "start": str_to_timestamp("12:00", day=2),
         "end": str_to_timestamp("12:45", day=2),
         "day": 2,
