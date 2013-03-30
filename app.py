@@ -79,9 +79,9 @@ def upload():
             photos.save(filename,
                         name="{:s}_{:s}".format(email, filename.filename))
         except UploadNotAllowed as e:
-            return jsonify(error=e.message)
-        return jsonify(message="good")
-    return u"Geçersiz işlem", 500
+            return jsonify(error=u"Yükleme işlemi başarısız oldu.")
+        return jsonify(message=u"Yükleme başarılı.")
+    return jsonify(error=u"Geçersiz işlem"), 500
 
 if __name__ == "__main__":
     import sys
