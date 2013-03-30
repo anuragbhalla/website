@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="tr" ng-app="app">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="css/main.css" />
+	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+
+<body ng-controller="appCtr">
+
+	<section class="overlay hide">
+		
+		<div class="modal">
+
+			<div class="photo-sending hide">
+				<img src="img/icon/loader.gif" height="128" width="128" alt="">
+				<p>HATIRA FOTOĞRAFINIZ YÜKLENİYOR<br/>LÜTFEN BEKLEYİN</p>
+			</div>
+			<!-- end photo sendin -->
+			
+			<div class="alert hide">
+				<p class="success">FOTOĞRAFINIZ YÜKLENDİ</p>
+				<p class="error hide">ÜZGÜNÜM,<br /> FOTOĞRAFINIZ YÜKLENMEDİ :(</p>
+				<div class="close-popup" hm-release="closeModal()" add-active>{{text.close|capitalize}}</div>
+			</div>
+			<!-- end alert -->
+			
+			<div class="form">
+				<p>{{text.are_you_sure|capitalize}}</p>
+				<input type="text" name="email" id="email" placeholder="{{text.your_email}}" autocomplete="off" value=""/>
+				<div class="gonder" hm-release="uploadPhoto()" add-active>{{text.send|capitalize}}</div>
+				<div class="close-popup" hm-release="closeModal()" add-active>{{text.close|capitalize}}</div>
+			</div>
+			<!-- end submit form -->
+			
+		</div>
+		
+	</section><!-- end modal -->
+	
+	<div class="container">
+		
+		<div id="cube">
+			
+			<section class="page snap top" ng-controller="snapshotCtr" ng-include src="'templates/snapshot.html'"></section><!-- end snap -->
+			<section class="page home front" ng-controller="mainCtr" ng-include src="'templates/main.html'"></section><!-- end home-->
+			<section class="page calendar bottom" ng-controller="calendarCtr" ng-include src="'templates/calendar.html'"></section><!-- end calendar -->
+			
+		</div><!-- end cube -->
+		
+	</div><!-- end container -->
+
+	<div class="keyboard">
+		<div class="letters">
+			<div class="row">
+				<div add-active><span>q</span></div>
+				<div add-active><span>w</span></div>
+				<div add-active><span>e</span></div>
+				<div add-active><span>r</span></div>
+				<div add-active><span>t</span></div>
+				<div add-active><span>y</span></div>
+				<div add-active><span>u</span></div>
+				<div add-active><span>i</span></div>
+				<div add-active><span>o</span></div>
+				<div add-active><span>p</span></div>
+				<div add-active class="delete"><span></span></div>
+			</div>
+			<div class="row indent">
+				<div add-active><span>a</span></div>
+				<div add-active><span>s</span></div>
+				<div add-active><span>d</span></div>
+				<div add-active><span>f</span></div>
+				<div add-active><span>g</span></div>
+				<div add-active><span>h</span></div>
+				<div add-active><span>j</span></div>
+				<div add-active><span>k</span></div>
+				<div add-active><span>l</span></div>
+				<div add-active><span>.</span></div>
+			</div>
+			<div class="row">
+				<div add-active><span>z</span></div>
+				<div add-active><span>x</span></div>
+				<div add-active><span>c</span></div>
+				<div add-active><span>v</span></div>
+				<div add-active><span>b</span></div>
+				<div add-active><span>n</span></div>
+				<div add-active><span>m</span></div>
+				<div add-active><span>@</span></div>
+				<div add-active><span>-</span></div>
+				<div add-active><span>_</span></div>
+			</div>
+		</div>
+		
+		<div class="numbers">
+			<div class="row">
+				<div add-active><span>1</span></div>
+				<div add-active><span>2</span></div>
+				<div add-active><span>3</span></div>
+				<div add-active class="rowspan"><span>0</span></div>
+			</div>
+			<div class="row">
+				<div add-active><span>4</span></div>
+				<div add-active><span>5</span></div>
+				<div add-active><span>6</span></div>
+			</div>
+			<div class="row">
+				<div add-active><span>7</span></div>
+				<div add-active><span>8</span></div>
+				<div add-active><span>9</span></div>
+				<div add-active><span>.</span></div>
+			</div>
+				
+				
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/datas.js" type="text/javascript"></script>
+	<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+	<script src="js/paper.js" type="text/javascript"></script>
+	<script src="js/angular.min.js" type="text/javascript"></script>
+	<script src="js/tools.js" type="text/javascript"></script>
+
+	<!-- Hummer.js -->
+	<script src="js/hummer.js" type="text/javascript"></script>
+	<script src="js/hummer.jquery.js" type="text/javascript"></script>
+
+	<!-- Angular.js App -->
+	<script src="js/core.js" type="text/javascript"></script>
+	<script src="js/hummer.angular.js" type="text/javascript"></script>
+
+</body>
+</html>

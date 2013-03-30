@@ -1,0 +1,20 @@
+<div class="back arrow-top" hm-release="goHome()" add-active>&larr;</div>
+
+<ul class="days">
+	<li class="active" hm-release="gotoDay(0)" tab-button>{{text.now|capitalize}}</li>
+	<li tab-button hm-release="gotoDay(1)">1.{{text.day|capitalize}}</li>
+	<li tab-button hm-release="gotoDay(2)">2.{{text.day|capitalize}}</li>
+</ul>
+<div class="timeline" style="margin-top:176px" scroll-view>
+	
+	<div ng-repeat="presentation in presentations" class="program {{presentation.now}}" ng-class-even="'right'">
+		<span class="time-point">●</span>
+		<img ng-src="http://jspyconf.org{{presentation.avatar|defaultAvatar}}" height="100" width="100" alt="" class="image">
+		<p>
+			{{presentation.title}}
+			<span class="talker"><strong>{{presentation.name}}</strong>, {{presentation.company}}</span>
+		</p>
+		<div class="time">{{presentation.start*1000|date:'HH:mm'}}<br/>{{presentation.end*1000|date:'HH:mm'}}</div>
+	</div>
+	
+</div><!-- end timeline -->

@@ -1,0 +1,49 @@
+/*=============================================
+=            Font Face Definitions            =
+=============================================*/
+.font-face("hero", "../font/Hero/hero-webfont", normal);
+.font-face("avenir", "../font/AvenirNext/Regular/avenirnextregular", normal);
+.font-face("avenir", "../font/AvenirNext/Italic/avenirnextregularitalic", normal, italic);
+.font-face("avenir", "../font/AvenirNext/Medium/avenirnextmedium", 500);
+.font-face("avenir", "../font/AvenirNext/DemiBold/avenirnextdemibold", 600);
+.font-face("avenir", "../font/AvenirNext/DemiBoldItalic/avenirnextdemibolditalic", 600, italic);
+.font-face("avenir", "../font/AvenirNext/Bold/avenirnextbold", bold);
+.font-face("avenirCondensed", "../font/AvenirNextCondensed/avenirnextcondensedbold", bold);
+
+
+
+/*================================================
+=            Basic Typography Settins            =
+================================================*/
+body {
+	font:15px @avenir;
+	line-height:20px;
+	color:@black;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+a {
+	text-decoration:none;
+}
+
+
+
+/*================================
+=            Headings            =
+================================*/
+h1 {
+	position:relative;
+	margin-bottom:30px;
+	font:600 24px @avenir;
+	color:@pomegranate;
+	letter-spacing:2.4px;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+h2 {
+	font:600 18px @avenir;
+}
+

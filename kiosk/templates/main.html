@@ -1,0 +1,34 @@
+<div class="live" hm-release="toggleProgramList($event);" hm-touch="$event.stopPropagation()">
+	<span>{{text.live|capitalize}}</span> {{currentDay}}.{{text.day|capitalize}}
+</div>
+<div class="black-active program-list" hm-touch="$event.stopPropagation()">
+	<div class="wrap">
+		<ul scroll-view="h">
+			<li ng-repeat="presentation in presentations" class="{{presentation.now}}">
+				<p>
+					{{presentation.title}}
+					<span class="talker"><strong>{{presentation.name}}</strong>, {{presentation.company}}</span>
+				</p>
+				<div class="time">{{presentation.start*1000|date:'HH:mm'}}<br/>{{presentation.end*1000|date:'HH:mm'}}</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="calendar" hm-release="openCalendar()">
+	<i class="home-arrow down"></i>
+	<span class="day">{{currentDay}}.{{text.day|capitalize}}</span>
+	<span>JSPY</span>{{text.schedule|capitalize}}
+</div>
+
+<img src="img/logo/home-logo.png" height="344" width="231" alt="JSPY Logo" class="logo">
+
+<div class="snap" hm-release="openSnapshot()">
+	<i class="home-arrow up"></i>
+	<span>JSPY</span>{{text.souvenir|capitalize}}
+</div>
+
+<div class="language">
+	<span class="active" hm-release="changeLanguage($event, 'tr')">TR</span>
+	<span hm-release="changeLanguage($event, 'en')">EN</span>
+</div>
