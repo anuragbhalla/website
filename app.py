@@ -1,9 +1,5 @@
 # coding: utf-8
 
-import md5
-import re
-import time
-
 from datetime import datetime
 
 from flask import Flask, jsonify, request, render_template
@@ -72,30 +68,6 @@ def index():
 @cached(timeout=60 * 60 * 5)
 def schedule_():
     return jsonify(schedule=schedule)
-
-
-@app.route("/upload", methods=["POST"])
-def upload():
-    if request.method == 'POST':
-
-        # Get email address
-        email = request.form.get('email')
-
-        # Get the photo (base64 data)
-        data_to_64 = re.search(r'base64,(.*)', request.form.get('file')).group(1)
-        decoded = data_to_64.decode('base64')
-
-        # Save the photo
-        # Create a unique name
-        m = md5.new()
-        dt = datetime.now()
-        m.update(str(time.mktime(dt.timetuple())+dt.microsecond/1000000.0))
-        fileName = m.hexdigest()
-        path = 'uploads/'+email+'_'+fileName+'.jpg'
-        f = open('static/'+path, 'w')
-        f.write(decoded)
-
-
 
 if __name__ == "__main__":
     import sys

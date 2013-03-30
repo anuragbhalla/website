@@ -82,3 +82,15 @@ def clean():
 def clean_pyc():
     """Remove all .pyc files."""
     local('find . -name "*.pyc" -exec rm {} \;')
+
+
+def start_upload():
+    with cd('/home/wakefield/dokun'), prefix(env.activate):
+        run('gunicorn -c gunicorn.py app:app')
+
+    restart_nginx()
+
+
+def restart_upload():
+    with cd('/home/wakefield/dokun'), prefix(env.activate):
+        sudo('sudo kill -HUP `cat /tmp/dokun.pid`')
