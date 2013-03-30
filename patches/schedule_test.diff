@@ -1,0 +1,29 @@
+diff --git a/schedule.py b/schedule.py
+index f7498e9..b3ca2c8 100644
+--- a/schedule.py
++++ b/schedule.py
+@@ -1,6 +1,6 @@
+ # coding: utf-8
+ 
+-from datetime import datetime
++from datetime import datetime, timedelta
+ 
+ 
+ def str_to_timestamp(date_str, day):
+@@ -256,4 +256,16 @@ schedule = [
+         "saloon": 2,
+         "is_sponsor": False
+     },
++
++    {
++        "avatar": "",
++        "name": u"Berker Peksağ",
++        "title": u"JavaScript Web Uygulamaları ile Arama Motorlarının Arasındaki Husumeti Gidermek",  # u"Python at Mozilla",
++        "company": u"Mozilla",
++        "start": datetime.utcnow().strftime("%s"),
++        "end": (datetime.utcnow() + timedelta(hours=2)).strftime("%s"),
++        "day": 1,
++        "saloon": 1,
++        "is_sponsor": False
++    },
+ ]

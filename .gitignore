@@ -7,3 +7,7 @@ fabenv.py
 settings.py
 
 html/
+
+static/uploads/*.png
+static/uploads/*.jpg
+static/uploads/*.gif
