@@ -9,7 +9,8 @@
             {% if current_talk %}
             <span class="live">{{ _("Canlı") }}</span>
 
-            <h2>{{ current_talk.title }}</h2>
+            {% set title_small = ' class="small"' if current_talk.title|count > 40 else '' %}
+            <h2{{ title_small|safe }}>{{ current_talk.title }}</h2>
             <h3>{{ current_talk.name }}</h3>
             {% else %}
             <p>{{ _("Şu an canlı yayınımız yok. En yakın canlı yayının ne zaman başlayacağını öğrenmek için lütfen
