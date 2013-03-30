@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-03-29 17:20+0200\n"
+"POT-Creation-Date: 2013-03-30 02:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -73,7 +73,7 @@ msgstr ""
 msgid "Ana Sayfa"
 msgstr ""
 
-#: templates/layout.html:32 templates/layout.html:54 templates/layout.html:73
+#: templates/layout.html:32 templates/layout.html:54 templates/layout.html:81
 msgid "Sponsorlar"
 msgstr ""
 
@@ -81,7 +81,7 @@ msgstr ""
 msgid "Program"
 msgstr ""
 
-#: templates/layout.html:34 templates/layout.html:112
+#: templates/layout.html:34 templates/layout.html:120
 msgid "Konuşmacılar"
 msgstr ""
 
@@ -101,49 +101,49 @@ msgstr ""
 msgid "Gümüş Sponsor"
 msgstr ""
 
-#: templates/layout.html:68
+#: templates/layout.html:72
 msgid "Bronz Sponsor"
 msgstr ""
 
-#: templates/layout.html:85
+#: templates/layout.html:93
 msgid "Görsel İletişim Sponsoru"
 msgstr ""
 
-#: templates/layout.html:90
+#: templates/layout.html:98
 msgid "Medya Sponsoru"
 msgstr ""
 
-#: templates/layout.html:95
+#: templates/layout.html:103
 msgid "JsPy'a destek olmak mı istiyorsunuz?"
 msgstr ""
 
-#: templates/layout.html:96
+#: templates/layout.html:104
 msgid "Sponsorluk Dosyasını İndirin"
 msgstr ""
 
-#: templates/layout.html:104
+#: templates/layout.html:112
 msgid "Konuşma Programı"
 msgstr ""
 
-#: templates/layout.html:123
+#: templates/layout.html:131
 msgid "Etkinlik Yeri ve Ulaşım"
 msgstr ""
 
-#: templates/layout.html:129
+#: templates/layout.html:137
 msgid "Özyeğin Üniversitesi"
 msgstr ""
 
-#: templates/layout.html:145
+#: templates/layout.html:153
 msgid "Organizasyon"
 msgstr ""
 
-#: templates/layout.html:161
+#: templates/layout.html:169
 msgid "JsPy Modern Web Teknolojileri Konferansı 2013"
 msgstr ""
 
 #: templates/on_event.html:2
 #, python-format
-msgid "%(day)s. Gün"
+msgid "%(day)s. Gun"
 msgstr ""
 
 #: templates/on_event.html:10

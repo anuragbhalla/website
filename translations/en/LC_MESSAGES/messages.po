@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-03-29 17:20+0200\n"
+"POT-Creation-Date: 2013-03-30 02:12+0200\n"
 "PO-Revision-Date: 2013-03-09 11:46+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -74,7 +74,7 @@ msgstr ""
 msgid "Ana Sayfa"
 msgstr "MAIN PAGE"
 
-#: templates/layout.html:32 templates/layout.html:54 templates/layout.html:73
+#: templates/layout.html:32 templates/layout.html:54 templates/layout.html:81
 msgid "Sponsorlar"
 msgstr "Sponsors"
 
@@ -82,7 +82,7 @@ msgstr "Sponsors"
 msgid "Program"
 msgstr "Schedule"
 
-#: templates/layout.html:34 templates/layout.html:112
+#: templates/layout.html:34 templates/layout.html:120
 msgid "Konuşmacılar"
 msgstr "Speakers"
 
@@ -102,49 +102,49 @@ msgstr "Gold Sponsors"
 msgid "Gümüş Sponsor"
 msgstr "Silver Sponsor"
 
-#: templates/layout.html:68
+#: templates/layout.html:72
 msgid "Bronz Sponsor"
 msgstr "Bronze Sponsor"
 
-#: templates/layout.html:85
+#: templates/layout.html:93
 msgid "Görsel İletişim Sponsoru"
 msgstr "Visual Communications Sponsor"
 
-#: templates/layout.html:90
+#: templates/layout.html:98
 msgid "Medya Sponsoru"
 msgstr "Media Sponsor"
 
-#: templates/layout.html:95
+#: templates/layout.html:103
 msgid "JsPy'a destek olmak mı istiyorsunuz?"
 msgstr "Do you want to support JsPy?"
 
-#: templates/layout.html:96
+#: templates/layout.html:104
 msgid "Sponsorluk Dosyasını İndirin"
 msgstr "Download Sponsorship File"
 
-#: templates/layout.html:104
+#: templates/layout.html:112
 msgid "Konuşma Programı"
 msgstr "Schedule"
 
-#: templates/layout.html:123
+#: templates/layout.html:131
 msgid "Etkinlik Yeri ve Ulaşım"
 msgstr "Venue &amp; Location"
 
-#: templates/layout.html:129
+#: templates/layout.html:137
 msgid "Özyeğin Üniversitesi"
 msgstr "Özyeğin University"
 
-#: templates/layout.html:145
+#: templates/layout.html:153
 msgid "Organizasyon"
 msgstr "ORGANIZATION"
 
-#: templates/layout.html:161
+#: templates/layout.html:169
 msgid "JsPy Modern Web Teknolojileri Konferansı 2013"
 msgstr "JsPyConf 2013"
 
 #: templates/on_event.html:2
 #, fuzzy, python-format
-msgid "%(day)s. Gün"
+msgid "%(day)s. Gun"
 msgstr "Day %(day)s"
 
 #: templates/on_event.html:10
