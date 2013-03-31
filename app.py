@@ -1,6 +1,7 @@
 # coding: utf-8
 
 import re
+import uuid
 
 from datetime import datetime
 
@@ -77,9 +78,10 @@ def upload():
     email = request.form.get("email")
     data_to_64 = re.search(r"base64,(.*)", request.form.get("file")).group(1)
     decoded = data_to_64.decode("base64")
-    path = "static/uploads/{}_{}.jpg".format(email, fileName)
-    with open(path) as fobj:
+    path = "static/uploads/{}_{}.jpg".format(email, uuid.uuid1())
+    with open(path, "w") as fobj:
         fobj.write(decoded)
+    return jsonify(message=u"Görsel yüklendi.")
 
 if __name__ == "__main__":
     import sys
