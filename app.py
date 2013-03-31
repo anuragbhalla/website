@@ -1,5 +1,7 @@
 # coding: utf-8
 
+import re
+
 from datetime import datetime
 
 from flask import Flask, jsonify, request, render_template
@@ -68,6 +70,16 @@ def index():
 @cached(timeout=60 * 60 * 5)
 def schedule_():
     return jsonify(schedule=schedule)
+
+
+@app.route("/upload", methods=["POST"])
+def upload():
+    email = request.form.get("email")
+    data_to_64 = re.search(r"base64,(.*)", request.form.get("file")).group(1)
+    decoded = data_to_64.decode("base64")
+    path = "static/uploads/{}_{}.jpg".format(email, fileName)
+    with open(path) as fobj:
+        fobj.write(decoded)
 
 if __name__ == "__main__":
     import sys
