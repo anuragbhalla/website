@@ -8,8 +8,6 @@ from email.utils import parseaddr
 
 from flask import Flask, jsonify, request, render_template
 from flaskext.babel import Babel
-from flaskext.uploads import (UploadSet, configure_uploads, IMAGES,
-                              UploadNotAllowed)
 
 from decorators import cached
 from errors import ImproperlyConfigured
@@ -22,16 +20,10 @@ except ImportError:
     raise ImproperlyConfigured(msg)
 from utils import get_statuses
 
-UPLOADED_PHOTOS_DEST = 'static/uploads'
-
 app = Flask(__name__)
 app.jinja_env.add_extension("jinja2htmlcompress.HTMLCompress")
 app.jinja_env.filters["humanize"] = humanize
 babel = Babel(app)
-
-photos = UploadSet("photos", IMAGES,
-                   default_dest=lambda l: UPLOADED_PHOTOS_DEST)
-configure_uploads(app, photos)
 
 
 @babel.localeselector
