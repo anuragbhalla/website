@@ -52,7 +52,7 @@ $ make
 ## TODO
 
 * Uygulamayı daha modüler hale getirmek için [blueprints][flask-blueprints]
-  kullan.
+  kullanılacak.
 
 [flask-blueprints]: http://flask.pocoo.org/docs/blueprints/
 
