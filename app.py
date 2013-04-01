@@ -4,6 +4,7 @@ import re
 import uuid
 
 from datetime import datetime
+from email.utils import parseaddr
 
 from flask import Flask, jsonify, request, render_template
 from flaskext.babel import Babel
@@ -75,13 +76,20 @@ def schedule_():
 
 @app.route("/upload", methods=["POST"])
 def upload():
-    email = request.form.get("email")
-    data_to_64 = re.search(r"base64,(.*)", request.form.get("file")).group(1)
-    decoded = data_to_64.decode("base64")
-    path = "static/uploads/{}_{}.jpg".format(email, uuid.uuid1())
-    with open(path, "w") as fobj:
-        fobj.write(decoded)
-    return jsonify(message=u"Görsel yüklendi.")
+    if "email" in request.form and "file" in request.form:
+        email = request.form.get("email")
+        if not parseaddr(email)[1]:
+            return jsonify(message=u"E-posta adresi geçersiz."), 400
+        data_to_64 = re.search(r"base64,(.*)", request.form.get("file")).group(1)
+        decoded = data_to_64.decode("base64")
+        path = "static/uploads/{}_{}.jpg".format(email, uuid.uuid1())
+        try:
+            with open(path, "w") as fobj:
+                fobj.write(decoded)
+            return jsonify(message=u"Görsel yüklendi.")
+        except IOError:
+            return jsonify(message=u"Dosyaya yazma işlemi başarısız oldu."), 500
+    return jsonify(message=u"Formun tamamı doldurulmadı."), 418
 
 if __name__ == "__main__":
     import sys
