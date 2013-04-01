@@ -54,8 +54,7 @@ def current_talk():
 
 
 @app.route("/", methods=["GET"])
-@cached(timeout=60 * 45,
-        key="on-event/%s" if on_event else "before-event/%s")
+@cached(timeout=60 * 45)
 def index():
     return render_template("index.html", statuses=get_statuses(),
                            locale=get_locale(), on_event=on_event,
