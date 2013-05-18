@@ -91,4 +91,4 @@ if __name__ == "__main__":
         port = int(sys.argv[1])
     except (IndexError, ValueError):
         port = PORT
-    app.run(port=port, debug=DEBUG)
+    app.run(port=port, debug=DEBUG, host='0.0.0.0')

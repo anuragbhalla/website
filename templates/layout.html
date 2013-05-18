@@ -8,6 +8,7 @@
                                             Türkçe ve İngilizce sunumlar içeren bir konferans.") }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='img/icon/favicon.png') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.fancybox.css') }}">
     <script src="{{ url_for('static', filename='js/modernizr.custom.15106.js') }}"></script>
     <script>
         var _gaq = _gaq || [];
@@ -46,6 +47,8 @@
     </div><!-- end intro -->
 
     {% block blog %}{% endblock %}
+
+    {% block presentations %}{% endblock %}
 
     {% block devpod %}{% endblock %}
 
@@ -176,6 +179,7 @@
 
     <script src="/static/js/css_browser_selector.js"></script>
     <script src="/static/js/jquery-1.9.1.min.js"></script>
+    <script src="/static/js/jquery.fancybox.pack.js"></script>
     <script src="/static/js/oridomi.min.js"></script>
     <script src="/static/js/core.js"></script>
 
